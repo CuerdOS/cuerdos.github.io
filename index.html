@@ -30,7 +30,7 @@ scrollLinks.forEach(link => {
 <body>
  <!-- Barra de navegación -->
   <nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
-	<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="logo" onclick="window.location.href='index.html'">
+	<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="cuerdos logo" onclick="window.location.href='index.html'">
 		<ul class="barrbotons" style="display: flex; list-style: none;">
 			<li class="barli"><a class="element" href="#acerca">Acerca de</a></li>
 			<li class="barli"><a class="element" href="#descarga">Descarga</a></li>
@@ -38,7 +38,7 @@ scrollLinks.forEach(link => {
 		</ul>
 	<nav>
   <div style="width: 10px;"></div>
-  <input style="margin:10px" type="image" src="images/github.webp" width="40px" alt="English flag" onclick="window.location.href='https://github.com/CuerdOS'">
+  <input style="margin:10px" type="image" src="images/github.webp" width="40px" alt="github logo" onclick="window.location.href='https://github.com/CuerdOS'">
 	</nav>
   </nav>
   <div style="height: 70px;"></div>
@@ -71,9 +71,9 @@ scrollLinks.forEach(link => {
 	</a>
   </button>
   <button class="grid-item2">
-       <img src="images/systemd.webp" alt="systemd">
-		<p style="font-weight: bold">SystemD</p>
-		<p>CuerdOS mantiene el uso de SystemD, este init ayuda a gestionar los servicios de manera más eficiente.</p>
+       <img src="images/sway.webp" alt="sway">
+		<p style="font-weight: bold">Sway</p>
+		<p>A parte de Xfce, el sistema tiene integrado el gestor de ventanas Sway, con la intención de soportar a Wayland.</p>
 	</a>
   </button>
   <button class="grid-item2">
@@ -84,13 +84,35 @@ scrollLinks.forEach(link => {
   </button>
 </div>
 </div>
+<div style="padding-left: 15%; padding-right: 15%">
+<h2>Otras características técnicas</h2>
+<ul>
+<li>Bauh Store preconfigurada para facilitar la instalación de programas (Debs y flatpak).</li>
+<li>ZRam habilitado para mejor rendimiento en máquinas de bajos requisitos pero también para evitar escrituras en el SSD o tiempos de demora en el HDD por la SWAP.</li>
+<li>Optimizado el uso de CPU y gestión de la memoria RAM.</li>
+<li>TLP preconfigurado tanto para Intel como AMD para tener una mejor autonomía de la batería.</li>
+<li>Requisitos mínimos: </li>
+    <ul>
+       <li>1GB de ram mínimo (aunque se recomiendan 2GB).</li>
+       <li>Procesador AMD o Atom equivalente de 64 bits (no se especifica modelo del procesador Atom debido a que no hay apenas diferencias entre ellos en rendimiento).</li>
+       <li>SSD recomendado para obtener la mejor experiencia, aunque con HDD también rinde bastante bien.</li>
+    </ul>
+<li>GRUB y <i>boot logo</i> personalizados junto al amado neofetch.</li>
+<li>Polybar y Rofi (y Waybar y Wofi) preconfigurados y tematizados para conseguir una buena coherencia visual junto a los temas propios de iconos y ventanas.</li>
+<li>Soporte a ser virtualizado.</li>
+<li>Actualizaciones de seguridad automáticas.</li>
+<li>Atajo para recordar otros atajos, CTRL + ALT + H.</li>
+</ul>
+</div>
+<div style="height: 50px;"></div>
 </section>
 
 <!-- Descarga -->
 <section id="descarga">
 <div style="padding-left: 15%; padding-right: 15%">
    <h1>Descargas</h1>
-     <p>Esta es la primera versión de CuerdOS, llamado CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">'Cessna'</a>, en caso de encontrar errores contáctenos vía mail o telegram. ¡Gracias a todos por su colaboración y apoyo!</p>
+     <p>Esta es la primera versión de CuerdOS, llamado CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">'Cessna'</a>, en caso de encontrar errores contáctenos vía mail o telegram. ¡Gracias a todos por su colaboración y apoyo! La distribución está actualmetne en fase Alpha, por lo que aún no es apto para entornos de trabajo.</p>
+     <p>Puede ver los changelogs y bugs reportados de diferentes versiones <a class="element" href="changelog.html">aquí</a>.</p>
       <center>
       <button onclick="window.location.href='https://sourceforge.net/projects/cuerdos/files/CuerdOS-Alpha-2_amd64.iso/download'" class="boton1">CuerdOS 'Cessna' Alpha2 (x86_64)</button>
       </center>

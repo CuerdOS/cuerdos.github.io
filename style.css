@@ -96,7 +96,7 @@ a {
   right: 0;
 }
 
-/* menu carta */
+/* elementos */
 
 .navegacion {
   justify-content: space-between;
@@ -177,13 +177,6 @@ a {
   border: none;
 }
 
-p {
-  font-family: Roboto; sans-serif;
-  font-weight: normal;
-  font-size: 17px;
-  color: white;
-}
-
 .cartol {
   font-family: Roboto; sans-serif;
   font-weight: bold;
@@ -233,6 +226,20 @@ footer {
 }
 
 /* Texto */
+
+p {
+  font-family: Roboto; sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: white;
+}
+
+ul {
+  font-family: Roboto; sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: white;
+}
 
 h1 {
   font-family: Roboto, sans-serif;
