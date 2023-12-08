@@ -26,9 +26,26 @@ scrollLinks.forEach(link => {
       });
    });
 });
+
+// Función para redirigir solo si el idioma es español
+        function redirigirSegunIdioma() {
+            // Obtener el idioma del navegador del usuario
+            var idiomaUsuario = navigator.language || navigator.userLanguage;
+
+            // Redirigir solo si el idioma es español
+            if (idiomaUsuario.startsWith('es')) {
+                // Si es español, redirige a index_es
+                window.location.href = 'changelog_es.html';
+            }
+        }
+
   </script>
 </head>
 <body>
+  <script>
+    //Redirigir a otro idioma
+    redirigirSegunIdioma();
+  </script>
  <!-- Barra de navegación -->
   <nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
 	<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="cuerdos logo" onclick="window.location.href='index.html'">
@@ -50,32 +67,32 @@ scrollLinks.forEach(link => {
 <h3 class="center" style="font-weight: bold">Changelog</h3>
   <h3>Cessna Release Candidate</h3>
     <ul>
-     <li>Mudanza a Debian 12 (bookworm) completada.</li>
-     <li>Ahora hay una edición centrada en I3 y Sway, y otra centrada en Xfce (edición Xfce disponible proximamente).</li>
-     <li>Cambiamos Thunar por Nemo ya que este es compatible tanto con Wayland como Xorg de forma nativa.</li>
-     <li>Algunos programas como Osmo (Calendario) y Galculator (Calculadora) han sido añadidos.</li>
-     <li>Nuevo menú y <i>powermenu</i> basados en Rofi.</li>
-     <li>Conky se añadió en ambas sesiones para facilitar los atajos de teclado a los usuarios (en la web de sourceforge se ven las capturas).</li>
-     <li>La tienda gráfica de aplicaciones Bauh empaquetada en Deb.</li>
-     <li>Nuevas aplicaciones disponibles en los repositorios (ArmCord, Autofirma (Junta de Andalucía), VirtualBox.)</li>
+     <li>Debian 12 (bookworm) move completed.</li>
+     <li>Now there is an I3 and Sway focused release, and an Xfce focused release (XFCE edition coming soon).</li>
+     <li>We switched Thunar to Nemo as it supports both Wayland and Xorg natively.</li>
+     <li>Some programs like Osmo (Calendar) and Galculator (Calculator) have been added.</li>
+     <li>New menu and <i>powermenu</i> based on Rofi.</li>
+     <li>Conky was added in both sessions to make keyboard shortcuts easier for users (on the sourceforge web site you can see the screenshots).</li>
+     <li>Bauh graphical application store packaged in Deb.</li>
+     <li>New applications available in the repositories (ArmCord, Autofirma (Junta de Andalucía), VirtualBox).</li>
     </ul>
   <h3>Cessna Beta</h3>
     <ul>
-      <li>Nuevo <i>display manager</i> basado en tty con soporte a Wayland (Ly).</li>
-      <li>Se ha integrado el gestor de ventanas Sway con el objetivo de dar soporte a Wayland.</li>
-      <li>Calamares ahora puede crear un usuario.</li>
-      <li>Integración de Apt-fast sobre Apt.</li>
-      <li>Se ha intercambiado Engrampa por File-roller, ya que este soporta Wayland.</li>
-      <li>Errores con paquetes retenidos solucionados.</li>
-      <li>Bug de los fondos de escritorio arreglado.</li>
-      <li>Nuevos temas GTK (CuerdOS-Evergreen y CuerdOS-Mentolado modo claro)</li>
+      <li>New <i>display manager</i> tty based with Wayland support (Ly).</li>
+      <li>Sway window manager has been integrated to support Wayland.</li>
+      <li>Calamares can now create a user.</li>
+      <li>Apt-fast integration over Apt.</li>
+      <li>Engrampa has been exchanged for File-roller, as it supports Wayland.</li>
+      <li>Bugs with retained packages fixed.</li>
+      <li>Desktop backgrounds bug fixed.</li>
+      <li>New GTK themes (CuerdOS-Evergreen and CuerdOS-Mentolado light mode).</li>
     </ul>
   <h3>Cessna Alpha2</h3>
     <ul>
-      <li>Se ha cambiado el instalador de systemback por el instalador calamares.</li>
-      <li>Cambio en el método para realizar la iso.</li>
-      <li>Se han mejorado los temas de polybar y rofi.</li>
-      <li>Nuevos paquetes en el repositorio de la rama estable.</li>
+      <li>Changed Systemback installer to Calamares installer.</li>
+      <li>Changed the method to perform the ISO.</li>
+      <li>Improved polybar and rofi themes.</li>
+      <li>New packages in the stable branch repository.</li>
     </ul>
 </div>
 </section>
@@ -84,30 +101,30 @@ scrollLinks.forEach(link => {
 <section id="errores">
 <div style="height: 50px;"></div>
 <div style="padding-left: 15%; padding-right: 15%">
-<h3 class="center" style="font-weight: bold">Errores de lanzamiento</h3>
+<h3 class="center" style="font-weight: bold">Launch errors</h3>
 <h3>Cessna Release Candidate</h3>
     <ul>
-     <li>La ISO no carga en algunos sistemas UEFI <a class="element">(arreglado tras la build 231125)</a>.</li>
+     <li>ISO will not load on some UEFI systems <a class="element">(fixed in the build 231125)</a>.</li>
     </ul>
   <h3>Cessna Beta</h3>
     <ul>
-      <li>Pequeño bug en el autostart de un programa no existente.</li>
-      <li>El <i>display manager</i> Ly cambia su usuario por defecto al actualizar el paquete.</li>
-      <li>El atajo de teclas para la ayuda de Xfce no funciona <a class="element">(arreglado tras la update 1.1.4 del paquete config-updates)</a>.</li>
-      <li>El cursor de Sway va lento en los <i>touchpads</i> <a class="element">(arreglado tras la update 1.0.2 del paquete sway-config)</a>.</li>
+      <li>Small bug in autostart of a non-existing program.</li>
+      <li>The <i>display manager</i> Ly changes its default user when updating the package.</li>
+      <li>El atajo de teclas para la ayuda de Xfce no funciona <a class="element">(fixed in the update 1.1.4 from package config-updates)</a>.</li>
+      <li>Sway's cursor is slow on the <i>touchpads</i> <a class="element">(fixed in the update 1.0.2 from package sway-config)</a>.</li>
     </ul>
   <h3>Cessna Alpha2</h3>
     <ul>
-      <li>El instalador calamares no puede crear un usuario <a class="element">(arreglado en beta)</a>.</li>
-      <li>En algunas pantallas, los fondos de escritorio personalizados no salen por defecto <a class="element">(arreglado en beta)</a>.</li>
-      <li>El paquete grub-efi tiene problemas en la configuración tras una de las últimas upgrades <a class="element">(arreglado en beta)</a>.</li>
+      <li>Calamares installer cannot create a user <a class="element">(fixed in beta)</a>.</li>
+      <li>On some screens, custom wallpapers are not displayed by default. <a class="element">(fixed in beta)</a>.</li>
+      <li>grub-efi package has configuration problems after one of the latest upgrades <a class="element">(fixed in beta)</a>.</li>
     </ul>
   <h3>Cessna Alpha1</h3>
     <ul>
-      <li>La instalación falla en sistemas UEFI <a class="element">(arreglado en alpha2)</a>.</li>
-      <li>GRUB tiene no muestra el nombre de la distribución <a class="element">(arreglado en alpha2)</a>.</li>
-      <li>En algunas pantallas, los fondos de escritorio personalizados no salen por defecto <a class="element">(arreglado en beta)</a>.</li>
-      <li>El instalador no permite cambiar el idioma, y puede ser complicado para principiantes <a class="element">(arreglado en alpha2)</a>.</li>
+      <li>Installation fails on UEFI systems <a class="element">(fixed in alpha2)</a>.</li>
+      <li>GRUB does not display the distribution name <a class="element">(fixed in alpha2)</a>.</li>
+      <li>On some screens, custom wallpapers do not appear by default <a class="element">(fixed in beta)</a>.</li>
+      <li>The installer does not allow to change the language, and can be complicated for beginners <a class="element">(fixed in alpha2)</a>.</li>
     </ul>
 </div>
 </section>

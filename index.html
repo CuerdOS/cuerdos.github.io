@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 <head>
   <title>CuerdOS</title>
   <meta charset="utf-8">
@@ -26,15 +26,32 @@ scrollLinks.forEach(link => {
       });
    });
 });
+
+// Función para redirigir solo si el idioma es español
+        function redirigirSegunIdioma() {
+            // Obtener el idioma del navegador del usuario
+            var idiomaUsuario = navigator.language || navigator.userLanguage;
+
+            // Redirigir solo si el idioma es español
+            if (idiomaUsuario.startsWith('es')) {
+                // Si es español, redirige a index_es
+                window.location.href = 'index_es.html';
+            }
+        }
+
   </script>
 </head>
 <body>
+  <script>
+    //Redirigir a otro idioma
+    redirigirSegunIdioma();
+  </script>
  <!-- Barra de navegación -->
   <nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
 	<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="cuerdos logo" onclick="window.location.href='index.html'">
 		<ul class="barrbotons" style="display: flex; list-style: none;">
-			<li class="barli"><a class="element" href="#acerca">Acerca de</a></li>
-			<li class="barli"><a class="element" href="#descarga">Descarga</a></li>
+			<li class="barli"><a class="element" href="#acerca">About</a></li>
+			<li class="barli"><a class="element" href="#descarga">Download</a></li>
 			<li class="barli"><a class="element" href="https://cuerdoswiki.blogspot.com/">Wiki</a></li>
 		</ul>
 	<nav>
@@ -48,62 +65,61 @@ scrollLinks.forEach(link => {
 <section id="acerca">
 <div style="height: 50px;"></div>
 <div style="padding-left: 15%; padding-right: 15%">
-<p class="center"><i>"Optimizado hasta el último pixel."</i></p>
-  <h1>Acerca de</h1>
-	<p>CuerdOS es una distribución de GNU/Linux enfocada en la estabilidad y rendimiento constante en ordenadores de cualquier gama,
-	 sin perder funcionalidad alguna.</p>
-	<p>Esta distribución no es solo una derivada con un entorno de escritorio personalizado, sino que tiene una serie de optimizaciones y mejoras de rendimiento, en los que se encuentran: la optimización de servicios activos, mejoras en el uso del procesador, entre otras muchas más.</p>
+<p class="center"><i>"Optimized to the last pixel."</i></p>
+  <h1>About</h1>
+	<p>CuerdOS is a GNU/Linux distribution focused on stability and constant performance on computers of any range,
+	 without losing any functionality.</p>
+	<p>This distribution is not only a derivative with a customized desktop environment, but it has a series of optimizations and performance improvements, including: optimization of active services, improvements in the use of the processor, among many others.</p>
 </div>
 <div style="height: 50px;"></div>
 
 <div style="padding-left: 10%; padding-right: 10%">
-<h2>Principales características</h2>
+<h2>Main characteristics</h2>
 <div class="grid-container2">
   <button class="grid-item2">
        <img src="images/debian.webp" alt="Debian Linux">
-		<p style="font-weight: bold">Basado en Debian</p>
-		<p>Basado en Debian, lo que proporciona una gran estabilidad y seguridad, además de muy buena flexibilidad.</p>
+		<p style="font-weight: bold">Debian based</p>
+		<p>This provides great stability and security, as well as very good flexibility.</p>
 	</a>
   </button>
   <button class="grid-item2">
        <img src="images/vanguardia.webp" alt="Vanguardia">
-		<p style="font-weight: bold">Ligero y moderno</p>
-		<p>A diferencia de otras distribuciones ligeras CuerdOS es un sistema que opta por el vanguardismo.</p>
+		<p style="font-weight: bold">Light and fashionable</p>
+		<p>Unlike other lightweight distributions, CuerdOS is a system that opts for the avant-garde.</p>
 	</a>
   </button>
   <button class="grid-item2">
        <img src="images/sway.webp" alt="sway">
 		<p style="font-weight: bold">Sway</p>
-		<p>Esta distribución se centra en ofrecer una gran experiencia con Sway, aunque también dispone de i3 y pronto una versión con Xfce.</p>
+		<p>This distribution focuses on offering a great experience with Sway, although it also has i3 and soon Xfce.</p>
 	</a>
   </button>
   <button class="grid-item2">
        <img src="images/dpkg.webp" alt="Repository">
-		<p style="font-weight: bold">Repositorios Propios</p>
-		<p>CuerdOS tiene sus propios repositorios donde se proporcionan paquetes que no están en Debian.</p>
+		<p style="font-weight: bold">Own repositories</p>
+		<p>CuerdOS has its own repositories where packages that are not in Debian are provided.</p>
 	</a>
   </button>
 </div>
 </div>
 <div style="padding-left: 15%; padding-right: 15%">
-<h2>Otras características técnicas</h2>
+<h2>Other technical features</h2>
 <ul>
-<li>Bauh Store preconfigurada para facilitar la instalación de programas (Debs y flatpak).</li>
-<li>ZRam habilitado para mejor rendimiento en máquinas de bajos requisitos pero también para evitar escrituras en el SSD o tiempos de demora en el HDD por la SWAP.</li>
-<li>Optimizado el uso de CPU y gestión de la memoria RAM.</li>
-<li>TLP preconfigurado tanto para Intel como AMD para tener una mejor autonomía de la batería.</li>
-<li>Pipewire como servidor multimedia.</li>
-<li>Requisitos mínimos: </li>
+<li>Bauh Store preconfigured for easy installation of programs (Debs y flatpak).</li>
+<li>ZRam enabled for better performance on low requirements machines but also to avoid writes to the SSD or lag times on the HDD by the SWAP.</li>
+<li>Optimized CPU usage and RAM management.</li>
+<li>TLP preconfigured for both Intel and AMD for better battery life.</li>
+<li>Pipewire as a media server.</li>
+<li>Minimum requirements: </li>
     <ul>
-       <li>1GB de ram mínimo (aunque se recomiendan 2GB).</li>
-       <li>Procesador AMD o Atom equivalente de 64 bits (no se especifica modelo del procesador Atom debido a que no hay apenas diferencias entre ellos en rendimiento).</li>
-       <li>Almacenamiento mínimo 15GB libres para no quedarnos cortos en caso de instalar más software (SSD recomendado para obtener la mejor experiencia, aunque con HDD también rinde bastante bien).</li>
+       <li>1GB of ram minimum (although 2GB recommended).</li>
+       <li>AMD or equivalent 64-bit Atom processor (Atom processor model is not specified because there is little difference between them in performance).</li>
+       <li>Minimum 15GB of free storage so as not to fall short in case of installing more software (SSD recommended for the best experience, although HDD also performs quite well).</li>
     </ul>
-<li>GRUB y <i>boot logo</i> personalizados junto al amado neofetch.</li>
-<li>Polybar y Rofi (y Waybar y Wofi) preconfigurados y tematizados para conseguir una buena coherencia visual junto a los temas propios de iconos y ventanas.</li>
-<li>Soporte a ser virtualizado.</li>
-<li>Actualizaciones de seguridad automáticas.</li>
-<li>Atajo para recordar otros atajos en Xfce, CTRL + ALT + H.</li>
+<li>GRUB and <i>boot logo</i> customized to your beloved neofetch.</li>
+<li>Polybar and Rofi (Waybar and Wofi) preconfigured and themed to achieve a good visual coherence together with the icons and windows themes..</li>
+<li>Support for virtualization.</li>
+<li>Automatic security updates.</li>
 </ul>
 </div>
 <div style="height: 50px;"></div>
@@ -112,12 +128,12 @@ scrollLinks.forEach(link => {
 <!-- Descarga -->
 <section id="descarga">
 <div style="padding-left: 15%; padding-right: 15%">
-   <h1>Descargas</h1>
-     <p>Esta es la primera versión de CuerdOS, llamado CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">'Cessna'</a>, en caso de encontrar errores o aportar ideas contáctenos vía mail o telegram. ¡Gracias a todos por su colaboración y apoyo!</p>
-     <p>Puede ver los changelogs y bugs reportados de diferentes versiones <a class="element" href="changelog.html">aquí</a>.</p>
+   <h1>Download</h1>
+     <p>This is the first version of CuerdOS, called CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">'Cessna'</a>, in case of finding errors or contributing ideas, please contact us via email or telegram. Thank you all for your collaboration and support.!</p>
+     <p>You can view the changelogs and bugs reported for different releases <a class="element" href="changelog.html">here</a>.</p>
       <center>
         <button onclick="window.location.href='https://sourceforge.net/projects/cuerdos/files/latest/download'" class="boton1">CuerdOS 'Cessna' RC1 (x86_64)</button>
-        <p style="font-style: italic; color: gray">*Antes de probar el sistema le recomendamos encarecidamente que actualice a la última versión, ya que tendrá todas las novedades y errores corregidos.*</p>
+        <p style="font-style: italic; color: gray">*Before testing the system, we strongly recommend that you upgrade to the latest version, as it will have all the new features and bugs fixed..*</p>
       </center>
 </div>
 </section>

@@ -1,0 +1,124 @@
+<html lang="es-ES">
+<head>
+  <title>Changelog</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <style>
+      body {
+          font-family: 'Roboto', sans-serif;
+      }
+  </style>
+  <script>
+scrollLinks.forEach(link => {
+   link.addEventListener('click', e => {
+      // Prevenir el comportamiento predeterminado de hacer clic en un enlace
+      e.preventDefault();
+
+      // Obtener el ID de la sección de destino del atributo href del enlace
+      const id = link.getAttribute('href');
+
+      // Desplazarse suavemente a la sección de destino
+      document.querySelector(id).scrollIntoView({
+         behavior: 'smooth'
+      });
+   });
+});
+  </script>
+</head>
+<body>
+ <!-- Barra de navegación -->
+  <nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
+	<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="cuerdos logo" onclick="window.location.href='index.html'">
+		<ul class="barrbotons" style="display: flex; list-style: none;">
+		  <div style="width: 20px;"></div>
+			<li class="barli"><a class="element" href="#changelog">Changelog</a></li>
+			<li class="barli"><a class="element" href="#errores">Errores</a></li>
+		</ul>
+	<nav>
+  <input style="margin:10px" type="image" src="images/github.webp" width="40px" alt="github logo" onclick="window.location.href='https://github.com/CuerdOS'">
+	</nav>
+  </nav>
+  <div style="height: 70px;"></div>
+
+<!-- Changelog -->
+<section id="changelog">
+<div style="height: 50px;"></div>
+<div style="padding-left: 15%; padding-right: 15%">
+<h3 class="center" style="font-weight: bold">Changelog</h3>
+  <h3>Cessna Release Candidate</h3>
+    <ul>
+     <li>Mudanza a Debian 12 (bookworm) completada.</li>
+     <li>Ahora hay una edición centrada en I3 y Sway, y otra centrada en Xfce (edición Xfce disponible proximamente).</li>
+     <li>Cambiamos Thunar por Nemo ya que este es compatible tanto con Wayland como Xorg de forma nativa.</li>
+     <li>Algunos programas como Osmo (Calendario) y Galculator (Calculadora) han sido añadidos.</li>
+     <li>Nuevo menú y <i>powermenu</i> basados en Rofi.</li>
+     <li>Conky se añadió en ambas sesiones para facilitar los atajos de teclado a los usuarios (en la web de sourceforge se ven las capturas).</li>
+     <li>La tienda gráfica de aplicacioens Bauh empaquetada en Deb.</li>
+     <li>Nuevas aplicaciones disponibles en los repositorios (ArmCord, Autofirma (Junta de Andalucía), VirtualBox.)</li>
+    </ul>
+  <h3>Cessna Beta</h3>
+    <ul>
+      <li>Nuevo <i>display manager</i> basado en tty con soporte a Wayland (Ly).</li>
+      <li>Se ha integrado el gestor de ventanas Sway con el objetivo de dar soporte a Wayland.</li>
+      <li>Calamares ahora puede crear un usuario.</li>
+      <li>Integración de Apt-fast sobre Apt.</li>
+      <li>Se ha intercambiado Engrampa por File-roller, ya que este soporta Wayland.</li>
+      <li>Errores con paquetes retenidos solucionados.</li>
+      <li>Bug de los fondos de escritorio arreglado.</li>
+      <li>Nuevos temas GTK (CuerdOS-Evergreen y CuerdOS-Mentolado modo claro)</li>
+    </ul>
+  <h3>Cessna Alpha2</h3>
+    <ul>
+      <li>Se ha cambiado el instalador de systemback por el instalador calamares.</li>
+      <li>Cambio en el método para realizar la iso.</li>
+      <li>Se han mejorado los temas de polybar y rofi.</li>
+      <li>Nuevos paquetes en el repositorio de la rama estable.</li>
+    </ul>
+</div>
+</section>
+	
+<!-- Errores -->
+<section id="errores">
+<div style="height: 50px;"></div>
+<div style="padding-left: 15%; padding-right: 15%">
+<h3 class="center" style="font-weight: bold">Errores de lanzamiento</h3>
+  <h3>Cessna Beta</h3>
+    <ul>
+      <li>Pequeño bug en el autostart de un programa no existente.</li>
+      <li>El <i>display manager</i> Ly cambia su usuario por defecto al actualizar el paquete.</li>
+      <li>El atajo de teclas para la ayuda de Xfce no funciona <a class="element">(arreglado tras la update 1.1.4 del paquete config-updates)</a>.</li>
+      <li>El cursor de Sway va lento en los <i>touchpads</i> <a class="element">(arreglado tras la update 1.0.2 del paquete sway-config)</a>.</li>
+    </ul>
+  <h3>Cessna Alpha2</h3>
+    <ul>
+      <li>El instalador calamares no puede crear un usuario <a class="element">(arreglado en beta)</a>.</li>
+      <li>En algunas pantallas, los fondos de escritorio personalizados no salen por defecto <a class="element">(arreglado en beta)</a>.</li>
+      <li>El paquete grub-efi tiene problemas en la configuración tras una de las últimas upgrades <a class="element">(arreglado en beta)</a>.</li>
+    </ul>
+  <h3>Cessna Alpha1</h3>
+    <ul>
+      <li>La instalación falla en sistemas UEFI <a class="element">(arreglado en alpha2)</a>.</li>
+      <li>GRUB tiene no muestra el nombre de la distribución <a class="element">(arreglado en alpha2)</a>.</li>
+      <li>En algunas pantallas, los fondos de escritorio personalizados no salen por defecto <a class="element">(arreglado en beta)</a>.</li>
+      <li>El instalador no permite cambiar el idioma, y puede ser complicado para principiantes <a class="element">(arreglado en alpha2)</a>.</li>
+    </ul>
+</div>
+</section>
+
+<div style="height: 150px;"></div>
+</body>
+
+<div style="height: 70px;"></div>
+<footer>
+  <div class="left">
+    Creado por CuerdOS Dev Team.
+  </div>
+  <div class="right">
+	  <a href="mailto:cuerdoslinux@proton.me">Mail</a>
+	  <a href="https://t.me/CuerdOS_Noticias">Telegram</a>
+  </div>
+</footer>
+</body>
+</html>
