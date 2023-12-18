@@ -1,99 +1,99 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 <head>
-  <title>Changelog</title>
-  <meta charset="utf-8">
-  <link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-  <style>
-      body {
-          font-family: 'Roboto', sans-serif;
-      }
-  </style>
-  <script>
+	<title>Changelog</title>
+		<meta charset="utf-8">
+			<link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
+			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+<style>
+	body {
+		font-family: 'Roboto', sans-serif;
+	}
+</style>
+<script>
 scrollLinks.forEach(link => {
-   link.addEventListener('click', e => {
-      // Prevenir el comportamiento predeterminado de hacer clic en un enlace
-      e.preventDefault();
+	link.addEventListener('click', e => {
+		// Prevenir el comportamiento predeterminado de hacer clic en un enlace
+		e.preventDefault();
 
-      // Obtener el ID de la sección de destino del atributo href del enlace
-      const id = link.getAttribute('href');
+		// Obtener el ID de la sección de destino del atributo href del enlace
+		const id = link.getAttribute('href');
 
-      // Desplazarse suavemente a la sección de destino
-      document.querySelector(id).scrollIntoView({
-         behavior: 'smooth'
-      });
-   });
+		// Desplazarse suavemente a la sección de destino
+		document.querySelector(id).scrollIntoView({
+		behavior: 'smooth'
+		});
+	});
 });
 
 // Función para redirigir solo si el idioma es español
-        function redirigirSegunIdioma() {
-            // Obtener el idioma del navegador del usuario
-            var idiomaUsuario = navigator.language || navigator.userLanguage;
+		function redirigirSegunIdioma() {
+			// Obtener el idioma del navegador del usuario
+			var idiomaUsuario = navigator.language || navigator.userLanguage;
 
-            // Redirigir solo si el idioma es español
-            if (idiomaUsuario.startsWith('es')) {
-                // Si es español, redirige a index_es
-                window.location.href = 'changelog_es.html';
-            }
-        }
+			// Redirigir solo si el idioma es español
+			if (idiomaUsuario.startsWith('es')) {
+				// Si es español, redirige a index_es
+				window.location.href = 'changelog_es.html';
+			}
+		}
 
-  </script>
+</script>
 </head>
 <body>
-  <script>
+<script>
     //Redirigir a otro idioma
     redirigirSegunIdioma();
-  </script>
- <!-- Barra de navegación -->
-  <nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
+</script>
+<!-- Barra de navegación -->
+<nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
 	<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="cuerdos logo" onclick="window.location.href='index_es.html'">
 		<ul class="barrbotons" style="display: flex; list-style: none;">
-		  <div style="width: 20px;"></div>
-			<li class="barli"><a class="element" href="#changelog">Changelog</a></li>
-			<li class="barli"><a class="element" href="#errores">Errores</a></li>
+			<div style="width: 20px;"></div>
+				<li class="barli"><a class="element" href="#changelog">Changelog</a></li>
+				<li class="barli"><a class="element" href="#errores">Errors</a></li>
 		</ul>
 	<nav>
-  <input style="margin:10px" type="image" src="images/github.webp" width="40px" alt="github logo" onclick="window.location.href='https://github.com/CuerdOS'">
+	<input style="margin:10px" type="image" src="images/github.webp" width="40px" alt="github logo" onclick="window.location.href='https://github.com/CuerdOS'">
 	</nav>
-  </nav>
-  <div style="height: 70px;"></div>
+	</nav>
+<div style="height: 70px;"></div>
 
 <!-- Changelog -->
 <section id="changelog">
 <div style="height: 50px;"></div>
 <div style="padding-left: 15%; padding-right: 15%">
 <h3 class="center" style="font-weight: bold">Changelog</h3>
-  <h3>Cessna Release Candidate</h3>
-    <ul>
-     <li>Debian 12 (bookworm) move completed.</li>
-     <li>Now there is an I3 and Sway focused release, and an Xfce focused release (XFCE edition coming soon).</li>
-     <li>We switched Thunar to Nemo as it supports both Wayland and Xorg natively.</li>
-     <li>Some programs like Osmo (Calendar) and Galculator (Calculator) have been added.</li>
-     <li>New menu and powermenu based on Rofi.</li>
-     <li>Conky was added in both sessions to make keyboard shortcuts easier for users (on the sourceforge web site you can see the screenshots).</li>
-     <li>Bauh graphical application store packaged in Deb.</li>
-     <li>New applications available in the repositories (ArmCord, Autofirma (Junta de Andalucía), VirtualBox).</li>
-    </ul>
-  <h3>Cessna Beta</h3>
-    <ul>
-      <li>New display manager tty based with Wayland support (Ly).</li>
-      <li>Sway window manager has been integrated to support Wayland.</li>
-      <li>Calamares can now create a user.</li>
-      <li>Apt-fast integration over Apt.</li>
-      <li>Engrampa has been exchanged for File-roller, as it supports Wayland.</li>
-      <li>Bugs with retained packages fixed.</li>
-      <li>Desktop backgrounds bug fixed.</li>
-      <li>New GTK themes (CuerdOS-Evergreen and CuerdOS-Mentolado light mode).</li>
-    </ul>
-  <h3>Cessna Alpha2</h3>
-    <ul>
-      <li>Changed Systemback installer to Calamares installer.</li>
-      <li>Changed the method to perform the ISO.</li>
-      <li>Improved polybar and rofi themes.</li>
-      <li>New packages in the stable branch repository.</li>
-    </ul>
+	<h3>Cessna Release Candidate</h3>
+		<ul>
+			<li>Debian 12 (bookworm) move completed.</li>
+			<li>Now there is an I3 and Sway focused release, and an Xfce focused release (XFCE edition coming soon).</li>
+			<li>We switched Thunar to Nemo as it supports both Wayland and Xorg natively.</li>
+			<li>Some programs like Osmo (Calendar) and Galculator (Calculator) have been added.</li>
+			<li>New menu and powermenu based on Rofi.</li>
+			<li>Conky was added in both sessions to make keyboard shortcuts easier for users (on the sourceforge web site you can see the screenshots).</li>
+			<li>Bauh graphical application store packaged in Deb.</li>
+			<li>New applications available in the repositories (ArmCord, Autofirma (Junta de Andalucía), VirtualBox).</li>
+		</ul>
+	<h3>Cessna Beta</h3>
+		<ul>
+			<li>New display manager tty based with Wayland support (Ly).</li>
+			<li>Sway window manager has been integrated to support Wayland.</li>
+			<li>Calamares can now create a user.</li>
+			<li>Apt-fast integration over Apt.</li>
+			<li>Engrampa has been exchanged for File-roller, as it supports Wayland.</li>
+			<li>Bugs with retained packages fixed.</li>
+			<li>Desktop backgrounds bug fixed.</li>
+			<li>New GTK themes (CuerdOS-Evergreen and CuerdOS-Mentolado light mode).</li>
+		</ul>
+<h3>Cessna Alpha2</h3>
+	<ul>
+			<li>Changed Systemback installer to Calamares installer.</li>
+			<li>Changed the method to perform the ISO.</li>
+			<li>Improved polybar and rofi themes.</li>
+			<li>New packages in the stable branch repository.</li>
+	</ul>
 </div>
 </section>
 	
@@ -102,46 +102,46 @@ scrollLinks.forEach(link => {
 <div style="height: 50px;"></div>
 <div style="padding-left: 15%; padding-right: 15%">
 <h3 class="center" style="font-weight: bold">Launch errors</h3>
-<h3>Cessna Release Candidate</h3>
-    <ul>
-     <li>ISO will not load on some UEFI systems <a class="element">(fixed in the build 231125)</a>.</li>
-     <li>The "linux-headers-amd64" package disappears after the system installation.</li>
-    </ul>
-  <h3>Cessna Beta</h3>
-    <ul>
-      <li>Small bug in autostart of a non-existing program.</li>
-      <li>The display manager Ly changes its default user when updating the package.</li>
-      <li>El atajo de teclas para la ayuda de Xfce no funciona <a class="element">(fixed in the update 1.1.4 from package config-updates)</a>.</li>
-      <li>Sway's cursor is slow on the touchpads <a class="element">(fixed in the update 1.0.2 from package sway-config)</a>.</li>
-    </ul>
-  <h3>Cessna Alpha2</h3>
-    <ul>
-      <li>Calamares installer cannot create a user <a class="element">(fixed in beta)</a>.</li>
-      <li>On some screens, custom wallpapers are not displayed by default. <a class="element">(fixed in beta)</a>.</li>
-      <li>grub-efi package has configuration problems after one of the latest upgrades <a class="element">(fixed in beta)</a>.</li>
-    </ul>
+	<h3>Cessna Release Candidate</h3>
+		<ul>
+			<li>ISO will not load on some UEFI systems <a class="element">(fixed in the build 231125)</a>.</li>
+			<li>The "linux-headers-amd64" package disappears after the system installation.</li>
+		</ul>
+	<h3>Cessna Beta</h3>
+		<ul>
+			<li>Small bug in autostart of a non-existing program.</li>
+			<li>The display manager Ly changes its default user when updating the package.</li>
+			<li>El atajo de teclas para la ayuda de Xfce no funciona <a class="element">(fixed in the update 1.1.4 from package config-updates)</a>.</li>
+			<li>Sway's cursor is slow on the touchpads <a class="element">(fixed in the update 1.0.2 from package sway-config)</a>.</li>
+		</ul>
+	<h3>Cessna Alpha2</h3>
+		<ul>
+			<li>Calamares installer cannot create a user <a class="element">(fixed in beta)</a>.</li>
+			<li>On some screens, custom wallpapers are not displayed by default. <a class="element">(fixed in beta)</a>.</li>
+			<li>grub-efi package has configuration problems after one of the latest upgrades <a class="element">(fixed in beta)</a>.</li>
+		</ul>
   <h3>Cessna Alpha1</h3>
-    <ul>
-      <li>Installation fails on UEFI systems <a class="element">(fixed in alpha2)</a>.</li>
-      <li>GRUB does not display the distribution name <a class="element">(fixed in alpha2)</a>.</li>
-      <li>On some screens, custom wallpapers do not appear by default <a class="element">(fixed in beta)</a>.</li>
-      <li>The installer does not allow to change the language, and can be complicated for beginners <a class="element">(fixed in alpha2)</a>.</li>
-    </ul>
+		<ul>
+			<li>Installation fails on UEFI systems <a class="element">(fixed in alpha2)</a>.</li>
+			<li>GRUB does not display the distribution name <a class="element">(fixed in alpha2)</a>.</li>
+			<li>On some screens, custom wallpapers do not appear by default <a class="element">(fixed in beta)</a>.</li>
+			<li>The installer does not allow to change the language, and can be complicated for beginners <a class="element">(fixed in alpha2)</a>.</li>
+		</ul>
 </div>
 </section>
 
-<div style="height: 150px;"></div>
+<div style="height: 70px;"></div>
 </body>
 
-<div style="height: 70px;"></div>
+<!-- Footer -->
 <footer>
-  <div class="left">
-    Creado por CuerdOS Dev Team.
-  </div>
-  <div class="right">
-	  <a href="mailto:cuerdoslinux@proton.me">Mail</a>
-	  <a href="https://t.me/CuerdOS_Noticias">Telegram</a>
-  </div>
+	<div class="left">
+		By CuerdOS Dev Team.
+	</div>
+	<div class="right">
+		<a href="mailto:cuerdoslinux@proton.me">Mail</a>
+		<a href="https://t.me/+GibSWjFc89Q2ODU8">Telegram</a>
+	</div>
 </footer>
 </body>
 </html>
