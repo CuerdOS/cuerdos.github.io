@@ -114,7 +114,7 @@ function initializePageContent()
 			'str-tablecontent-mincpu': 'CPU x86_64 a 1,00 Ghz',
 			'str-tablecontent-mindisk': '15GB de almacenamiento',
 			'str-tablecontent-recdisk': '15GB de almacenamiento en SSD',
-			'str-title-downloadlink-1': 'CuerdOS Standar',
+			'str-title-downloadlink-1': 'CuerdOS Standard',
 			'str-content-downloadlink-1': 'Esta es la edición con el entorno predeterminado de CuerdOS, el cual posee el gestor de ventanas Sway (Wayland) e I3 (Xorg).',
 			'str-title-downloadlink-2': 'CuerdOS Legacy',
 			'str-content-downloadlink-2': 'Originalmente, CuerdOS estaba planeado solo como Xfce, una idea inicialmente descartada pero ahora revivida como una edición dedicada.',
