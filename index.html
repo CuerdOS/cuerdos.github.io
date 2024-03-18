@@ -6,57 +6,21 @@
 			<link rel="icon" href="images/cuerdos_logo.webp" type="image/webp"/>
 			<link rel="stylesheet" href="style.css">
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-<style>
-	body {
-		font-family: 'Roboto', sans-serif;
-	}
-</style>
-<script>
-scrollLinks.forEach(link => {
-	link.addEventListener('click', e => {
-		// Prevenir el comportamiento predeterminado de hacer clic en un enlace
-		e.preventDefault();
-
-		// Obtener el ID de la sección de destino del atributo href del enlace
-		const id = link.getAttribute('href');
-
-		// Desplazarse suavemente a la sección de destino
-		document.querySelector(id).scrollIntoView({
-		behavior: 'smooth'
-		});
-	});
-});
-
-// Función para redirigir solo si el idioma es español
-		function redirigirSegunIdioma() {
-			// Obtener el idioma del navegador del usuario
-			var idiomaUsuario = navigator.language || navigator.userLanguage;
-
-			// Redirigir solo si el idioma es español
-			if (idiomaUsuario.startsWith('es')) {
-				// Si es español, redirige a index_es
-				window.location.href = 'index_es.html';
-			}
-		}
-
-  </script>
 </head>
 <body>
-<script>
-	//Redirigir a otro idioma
-	redirigirSegunIdioma();
-</script>
+ <!-- Note: please don't leave empty strings on tags (for users with JS disabled) -->
+
  <!-- Barra de navegación -->
 	<nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
-		<input style="margin:10px" type="image" src="images/cuerdos_logo.webp" width="40px" alt="cuerdos logo" onclick="window.location.href='index.html'">
+		<input class="barlinks" type="image" src="images/cuerdos_logo.webp" alt="cuerdos logo" onclick="window.location.href='index.html'">
 			<ul class="barrbotons" style="display: flex; list-style: none;">
-				<li class="barli"><a class="element" href="#acerca">About</a></li>
-				<li class="barli"><a class="element" href="#descarga">Download</a></li>
-				<li class="barli"><a class="element" href="https://cuerdoswikien.blogspot.com/">Wiki</a></li>
+				<li class="barli"><a id="str-menu-about" class="element" href="#acerca">About</a></li>
+				<li class="barli"><a id="str-menu-download" class="element" href="#descarga">Download</a></li>
+				<li class="barli"><a id="str-menu-wiki" class="element" href="https://cuerdoswikien.blogspot.com/">Wiki</a></li>
 			</ul>
 	<nav>
 	<div style="width: 10px;"></div>
-		<input style="margin:10px" type="image" src="images/github.webp" width="40px" alt="github logo" onclick="window.location.href='https://github.com/CuerdOS'">
+		<input class="barlinks" type="image" src="images/github.webp" alt="github logo" onclick="window.location.href='https://github.com/CuerdOS'">
 	</nav>
 	</nav>
 <div style="height: 70px;"></div>
@@ -65,62 +29,53 @@ scrollLinks.forEach(link => {
 <section id="acerca">
 <div style="height: 50px;"></div>
 <div style="padding-left: 15%; padding-right: 15%">
-<p class="center"><i>"Optimized to the last pixel."</i></p>
-	<h1>About</h1>
-		<p>CuerdOS is a GNU/Linux distribution focused on stability and constant performance on computers of any range,
+<p class="center"><i id="str-slogan">"Optimized to the last pixel."</i></p>
+	<h1 id="str-title-about">About</h1>
+		<p id="str-content-about-1">CuerdOS is a GNU/Linux distribution focused on stability and constant performance on computers of any range,
 		without losing any functionality.</p>
-		<p>This distribution is not only a derivative with a customized desktop environment, but it has a series of optimizations and performance improvements, including: optimization of active services, improvements in the use of the processor, among many others.</p>
+		<p id="str-content-about-2">This  is not only a derivative with a customized desktop environment, but it has a series of optimizations and performance improvements, including: optimization of active services, improvements in the use of the processor, among many others.</p>
 </div>
 <div style="height: 50px;"></div>
 
-<div style="padding-left: 10%; padding-right: 10%">
-<h2>Main characteristics</h2>
-<div class="grid-container2">
-	<button class="grid-item2">
+<div style="padding-left: 10%; padding-right: 10%" class="contenido">
+<h2 id="str-title-features">Main characteristics</h2>
+<ul class="features">
+	<li>
 		<img src="images/debian.webp" alt="debian logo">
-		<p style="font-weight: bold">Debian based</p>
+		<h3>Debian based</h3>
 		<p>This provides great stability and security, as well as very good flexibility.</p>
-	</a>
-	</button>
-	<button class="grid-item2">
+	</li>
+	<li>
 		<img src="images/vanguardia.webp" alt="Vanguardia">
-		<p style="font-weight: bold">Light and fashionable</p>
+		<h3>Light and fashionable</h3>
 		<p>Unlike other lightweight distributions, CuerdOS is a system that opts for the avant-garde.</p>
-	</a>
-	</button>
-	<button class="grid-item2">
+	</li>
+	<li>
 		<img src="images/sway.webp" alt="sway">
-		<p style="font-weight: bold">Sway</p>
+		<h3>Sway</h3>
 		<p>This distribution focuses on offering a great experience with Sway, although it also has i3 and Xfce.</p>
-	</a>
-	</button>
-	<button class="grid-item2">
+	</li>
+	<li>
 		<img src="images/dpkg.webp" alt="Repository">
-		<p style="font-weight: bold">Own repositories</p>
+		<h3>Own repositories</h3>
 		<p>CuerdOS has its own repositories where packages that are not in Debian are provided.</p>
-	</a>
-	</button>
-</div>
+	</li>
+</ul>
 </div>
 <div style="padding-left: 15%; padding-right: 15%">
-<h2>Other technical features</h2>
+<h2 id="str-title-otherfeatures">Other technical features</h2>
 <ul>
-<li>Bauh Store preconfigured for easy installation of programs (Debs y flatpak).</li>
-<li>ZRam enabled for better performance on low requirements machines but also to avoid writes to the SSD or lag times on the HDD by the SWAP.</li>
-<li>Apt-fast pre-installed and configured.</li>
-<li>Optimized CPU usage and RAM management.</li>
-<li>TLP preconfigured for both Intel and AMD for better battery life.</li>
-<li>Pipewire as a media server.</li>
-<li>Minimum requirements: </li>
-	<ul>
-		<li>1GB of ram minimum (although 2GB recommended).</li>
-		<li>AMD or equivalent 64-bit Atom processor (Atom processor model is not specified because there is little difference between them in performance).</li>
-		<li>Minimum 15GB of free storage so as not to fall short in case of installing more software (SSD recommended for the best experience, although HDD also performs quite well).</li>
-	</ul>
-<li>GRUB and <i>boot logo</i> customized to your beloved neofetch.</li>
-<li>Polybar and Rofi (and Waybar) preconfigured and themed to achieve a good visual coherence together with the icons and windows themes..</li>
-<li>Support for virtualization.</li>
-<li>Automatic security updates.</li>
+<li id="str-content-otherfeatures-1">Bauh Store preconfigured for easy installation of programs (Debs y flatpak).</li>
+<li id="str-content-otherfeatures-2">ZRam enabled for better performance on low requirements machines but also to avoid writes to the SSD or lag times on the HDD by the SWAP.</li>
+<li id="str-content-otherfeatures-3">Apt-fast pre-installed and configured.</li>
+<li id="str-content-otherfeatures-4">Optimized CPU usage and RAM management.</li>
+<li id="str-content-otherfeatures-5">TLP preconfigured for both Intel and AMD for better battery life.</li>
+<li id="str-content-otherfeatures-6">Pipewire as a media server.</li>
+
+<li id="str-content-otherfeatures-7">GRUB and <i>boot logo</i> customized to your beloved neofetch.</li>
+<li id="str-content-otherfeatures-8">Polybar and Rofi (and Waybar) preconfigured and themed to achieve a good visual coherence together with the icons and windows themes...</li>
+<li id="str-content-otherfeatures-9">Support for virtualization.</li>
+<li id="str-content-otherfeatures-10">Automatic security updates.</li>
 </ul>
 </div>
 <div style="height: 50px;"></div>
@@ -129,29 +84,56 @@ scrollLinks.forEach(link => {
 <!-- Descarga -->
 <section id="descarga">
 <div style="padding-left: 15%; padding-right: 15%">
-	<h1>Download</h1>
-		<p>This is the first version of CuerdOS, called CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">'Cessna'</a>, in case of finding errors or contributing ideas, please contact us via email or telegram. Thank you all for your collaboration and support.!</p>
-		<p>You can view the changelogs and bugs reported for different releases <a class="element" href="changelog.html">here</a>.</p>
+	<h1 id="str-title-download">Download</h1>
+		<p id="str-content-download-1">This is the first version of CuerdOS, called CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">'Cessna'</a>, in case of finding errors or contributing ideas, please contact us via email or telegram. Thank you all for your collaboration and support.!</p>
+		<p id="str-content-download-2">You can view the changelogs and bugs reported for different releases <a class="element" href="changelog.html">here</a>.</p>
 </div>
 <div style="height: 10px;"></div>
 <div style="padding-left: 14%; padding-right: 14%">
+
+<center>
+<table>
+<tr>
+	<th id="str-title-tabletitle" colspan="2">System Requirements</th>
+</tr>
+<tr>
+	<th id="str-tabletitle-minimum">Minimum</th>
+	<th id="str-tabletitle-recommended">Recommended</th>
+</tr>
+<tr>
+	<td id="str-tablecontent-minram" >1GB of RAM</td>
+	<td id="str-tablecontent-recram">2GB of RAM</td>
+</tr>
+<tr>
+	<td id="str-tablecontent-mincpu" colspan="2">x86_64 1,00 Ghz CPU</td>
+</tr>
+<tr>
+	<td id="str-tablecontent-mindisk">15GB Disk storage</td>
+	<td id="str-tablecontent-recdisk">15GB Disk Storage on SSD</td>
+</tr>
+</table>
+</center>
+
 <div class="grid-imagen">
+<section class="downloads">
 	<div class="grid-item-imagen">
-		<h2>CuerdOS Standard</h2>
-		<img src="images/cuerdos-standard.webp" alt="cuerdos-standard screenshot">
-		<p>This is the edition with the default CuerdOS environment, which has the Sway (Wayland) and I3 (Xorg) window manager.</p>
+		<h2 id="str-title-downloadlink-1">CuerdOS Standar</h2>
+		<img src="images/cuerdos-standard.webp" alt="captura de pantalla de cuerdes-standard">
+		<p id="str-content-downloadlink-1">This is the edition with the default CuerdOS environment, which has the Sway (Wayland) and I3 (Xorg) window manager.</p>
 		<center><button onclick="window.location.href='https://sourceforge.net/projects/cuerdos/files/stable/standard/CuerdOS-1.0-Standard_amd64.iso/download'" class="boton1">CuerdOS-1.0-Standard (x86_64)</button></center>
 	</div>
+	
 	<div class="grid-item-imagen">
-		<h2>CuerdOS Legacy</h2>
-		<img src="images/cuerdos-legacy.webp" alt="cuerdos-legacy screenshot">
-		<p>Originally, CuerdOS was planned as Xfce-only, an idea initially discarded but now revived as a dedicated edition.</p>
+		<h2 id="str-title-downloadlink-2">CuerdOS Legacy</h2>
+		<img src="images/cuerdos-legacy.webp" alt="captura de pantalla de cuerdes-legacy">
+		<p id="str-content-downloadlink-2">Originally, CuerdOS was planned as Xfce-only, an idea initially discarded but now revived as a dedicated edition.</p>
 		<center><button onclick="window.location.href='https://sourceforge.net/projects/cuerdos/files/stable/legacy/CuerdOS-1.0-Legacy_amd64.iso/download'" class="boton1">CuerdOS-1.0-Legacy (x86_64)</button></center>
 	</div>
+</section>
 </div>
 <div style="height: 25px;"></div>
 	<center>
-		<p style="font-style: italic; color: gray">*Before testing the system, we strongly recommend that you upgrade to the latest version, as it will have all the new features and bugs fixed.*</p>
+		<p id="str-subtitle-upgradewarning" style="font-style: italic; color: gray">*Before testing the system, we strongly recommend that you upgrade to the latest version, as it will have all the new features and bugs fixed.*</p>
 	<!--Partners-->
 	<div style="height: 10px;"></div>
 	</center>
@@ -163,12 +145,17 @@ scrollLinks.forEach(link => {
 <!-- Footer -->
 <footer>
 	<div class="left">
-		By CuerdOS Dev Team.
+		<span id="str-credits">By CuerdOS Dev Team.</span>
 	</div>
 	<div class="right">
-		<a href="mailto:cuerdoslinux@proton.me">Mail</a>
+		<a href="mailto:cuerdoslinux@proton.me">E-Mail</a>
 		<a href="https://t.me/+GibSWjFc89Q2ODU8">Telegram</a>
 </div>
 </footer>
+	<script src="translations.js" defer></script>
+	<script>
+		initializePageContent();
+	</script>
+</center>
 </body>
 </html>
