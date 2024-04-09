@@ -33,7 +33,7 @@ function initializePageContent()
 			'str-menu-wiki': 'Wiki',
 			'str-slogan': 'Optimized to the last pixel.',
 			'str-title-about': 'About',
-			'str-content-about-1': 'CuerdOS is a GNU/Linux distribution focused on stability and constant performance on computers of any range, without losing any functionality.',
+			'str-content-about-1': 'CuerdOS is a GNU/Linux distribution of Spanish origin focused on stability and constant performance on computers of any range, without losing any functionality.',
 			'str-content-about-2': 'This distribution is not only a derivative with a customized desktop environment, but it has a series of optimizations and performance improvements, including: optimization of active services, improvements in the use of the processor, among many others.',
 			'str-title-features': 'Main characteristics',
 			'str-title-feature-1': 'Debian based',
@@ -71,6 +71,7 @@ function initializePageContent()
 			'str-title-downloadlink-2': 'CuerdOS Legacy',
 			'str-content-downloadlink-2': 'Originally, CuerdOS was planned as Xfce-only, an idea initially discarded but now revived as a dedicated edition.',
 			'str-subtitle-upgradewarning': '*Before testing the system, we strongly recommend that you upgrade to the latest version, as it will have all the new features and bugs fixed.*',
+			'str-subtitle-logolicense': 'The <a class="element" href="https://github.com/CuerdOS/logo">CuerdOS logo</a> is published under license <a class="element" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>',
 			'str-credits': 'Created By CuerdOS Dev Team. ',
 		},
 		//SPANISH STRINGS
@@ -81,7 +82,7 @@ function initializePageContent()
 			'str-menu-wiki': 'Wiki',
 			'str-slogan': 'Optimizado hasta el último píxel.',
 			'str-title-about': 'Acerca de',
-			'str-content-about-1': 'CuerdOS es una distribución GNU/Linux enfocada en la estabilidad y el rendimiento constante en computadoras de cualquier rango, sin perder ninguna funcionalidad.',
+			'str-content-about-1': 'CuerdOS es una distribución GNU/Linux de origen Español enfocada en la estabilidad y el rendimiento constante en computadoras de cualquier rango, sin perder ninguna funcionalidad.',
 			'str-content-about-2': 'Esta distribución no es solo un derivado con un entorno de escritorio personalizado, sino que tiene una serie de optimizaciones y mejoras de rendimiento, incluida la optimización de servicios activos, mejoras en el uso del procesador, entre muchas otras.',
 			'str-title-features': 'Características principales',
 			'str-title-feature-1': 'Basado en Debian',
@@ -119,6 +120,7 @@ function initializePageContent()
 			'str-title-downloadlink-2': 'CuerdOS Legacy',
 			'str-content-downloadlink-2': 'Originalmente, CuerdOS estaba planeado solo como Xfce, una idea inicialmente descartada pero ahora revivida como una edición dedicada.',
 			'str-subtitle-upgradewarning': '*Antes de probar el sistema, recomendamos encarecidamente que actualice a la última versión, ya que tendrá todas las nuevas características y errores corregidos.*',
+			'str-subtitle-logolicense': 'El <a class="element" href="https://github.com/CuerdOS/logo">logo de CuerdOS</a> está publicado bajo licencia <a class="element" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>',
 			'str-credits': 'Creado por CuerdOS Dev Team. ',
 		},
 		// ??? STRINGS
