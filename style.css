@@ -477,6 +477,10 @@ background-size: cover;transition: 0.6s;}
 		width: 50%;
 	}
 
+	.features p {
+		font-size: 32px;
+	}
+
 	.titulo {
 		padding-top: 10%;
 	}
