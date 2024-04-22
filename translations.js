@@ -60,7 +60,7 @@ function initializePageContent()
 			'str-content-download-2': 'You can view the changelogs and bugs reported for different releases <a class="element" href="changelog.html">here</a>.',
 			'str-titile-tabletitle': 'System Requirements',
 			'str-tabletitle-minimum': 'Minimum',
-			'str-tabletitle-minimum': 'Recommended',
+			'str-tabletitle-recommended': 'Recommended',
 			'str-tablecontent-minram': '+1GB of RAM',
 			'str-tablecontent-recracm': '2GB of RAM',
 			'str-tablecontent-mincpu': 'x86_64 1,00 Ghz CPU',
