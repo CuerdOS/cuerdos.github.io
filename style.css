@@ -72,7 +72,7 @@ a {
 }
 
 .boton1:hover{
-	box-shadow: 5px 5px 10px 2px #2f340b;
+	box-shadow: 5px 5px 10px 2px rgba(210, 255, 105, 0.3);
 	background-color: #b2c530;
 }
 
