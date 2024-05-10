@@ -397,7 +397,7 @@ th, td {
 }
 
 .grid-item-imagen p {
-	max-width: 700px; /* Limita el ancho del texto a 700px */
+	max-width: 700px;
 }
 
 .lista {
@@ -457,6 +457,13 @@ background-size: cover;transition: 0.6s;}
 }
 .downloads img {
 	width: 444px;
+}
+
+/*Pantallas pequeñas*/
+@media (max-width: 1100px) {
+	.downloads {
+		flex-direction: column;
+	}
 }
 
 /*Vertical*/
