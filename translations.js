@@ -1,29 +1,4 @@
-//Welcome to the translations, go to Line 26 to modify/add translations
-function getBrowserLanguage()
-{
-	return navigator.language || navigator.userLanguage;
-}
-
-function updatePageContent(translations, language)
-{
-	for (var key in translations[language])
-	{
-		if (translations[language].hasOwnProperty(key))
-		{
-			var element = document.getElementById(key);
-			if (element)
-			{
-				element.innerHTML = translations[language][key];
-			}
-		}
-	}
-}
-
-function initializePageContent()
-{
-	var browserLanguage = getBrowserLanguage().split('-')[0];
-
-	var translations =
+var translations =
 	{
 		//ENGLISH STRINGS
 		'en':
@@ -139,6 +114,62 @@ function initializePageContent()
 			'str-subtitle-logolicense': 'El <a class="element" href="https://github.com/CuerdOS/logo">logo de CuerdOS</a> está publicado bajo licencia <a class="element" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>',
 			'str-credits': 'Creado por CuerdOS Dev Team. ',
 		},
+		'pt':
+		{
+			'str-menu-about': 'Sobre',
+			'str-menu-download': 'Baixar',
+			'str-menu-wiki': 'Wiki',
+			'str-slogan': 'Otimizado até o último pixel.',
+			'str-title-about': 'Sobre',
+			'str-content-about-1': 'CuerdOS é uma distribuição GNU/Linux de origem espanhola focada em estabilidade e desempenho constante em computadores de qualquer faixa, sem perder nenhuma funcionalidade.',
+			'str-content-about-2': 'Esta distribuição não é apenas um derivado com um ambiente de desktop personalizado, mas tem uma série de otimizações e melhorias de desempenho, incluindo: otimização de serviços ativos, melhorias no uso do processador, entre muitos outros.',
+			'str-content-about-3': 'Imagens NHS disponíveis, NHS significa "New Hardware Support" e isso se traduz no kernel da ramificação Stable do <a class="element" href="https://kernel.org/">kernel.org</a> funcionando corretamente para suportar o hardware mais recente compatível com o kernel.',
+			'str-title-features': 'Principais características',
+			'str-title-feature-1': 'Baseado no Debian',
+			'str-content-feature-1': 'Isso proporciona grande estabilidade e segurança, bem como uma flexibilidade muito boa.',
+			'str-title-feature-2': 'Leve e moderno',
+			'str-content-feature-2': 'Ao contrário de outras distribuições leves, o CuerdOS é um sistema que opta pela vanguarda.',
+			'str-title-feature-3': 'Sway',
+			'str-content-feature-3': 'Esta distribuição foca em oferecer uma ótima experiência com o Sway, embora também tenha o i3 e o Xfce.',
+			'str-title-feature-4': 'Repositórios próprios',
+			'str-content-feature-4': 'CuerdOS possui seus próprios repositórios onde são fornecidos pacotes que não estão no Debian.',
+			'str-title-otherfeatures': 'Outras características técnicas',
+			'str-content-otherfeatures-1': 'Bauh Store pré-configurado para instalação fácil de programas (Debs e flatpak).',
+			'str-content-otherfeatures-2': 'ZRam habilitado para melhor desempenho em máquinas com baixos requisitos, mas também para evitar gravações no SSD ou tempos de latência no HDD pelo SWAP.',
+			'str-content-otherfeatures-3': 'Apt-fast pré-instalado e configurado.',
+			'str-content-otherfeatures-4': 'Uso otimizado da CPU e gerenciamento de RAM.',
+			'str-content-otherfeatures-5': 'TLP pré-configurado para ambos Intel e AMD para uma melhor vida útil da bateria.',
+			'str-content-otherfeatures-6': 'Pipewire como servidor de mídia.',
+			'str-content-otherfeatures-7': 'GRUB e logotipo de inicialização personalizados juntamente com o seu amado neofetch.',
+			'str-content-otherfeatures-8': 'Polybar e Rofi (e Waybar) pré-configurados e tematizados para alcançar uma boa coerência visual junto com os ícones e temas de janelas...',
+			'str-content-otherfeatures-9': 'Suporte para virtualização.',
+			'str-content-otherfeatures-10': 'Atualizações de segurança automáticas.',
+			'str-title-download': 'Baixar',
+			'str-content-download-1': 'Esta é a primeira versão do CuerdOS, chamada CuerdOS <a class="element" href="https://es.wikipedia.org/wiki/Cessna">\'Cessna\'</a>, em caso de encontrar erros ou contribuir com ideias, entre em contato conosco por e-mail ou Telegram. Obrigado a todos pela colaboração e apoio!',
+			'str-content-download-2': 'Você pode ver os changelogs e bugs relatados para diferentes lançamentos <a class="element" href="changelog.html">aqui</a>.',
+			'str-titile-tabletitle': 'Requisitos do Sistema',
+			'str-tabletitle-minimum': 'Mínimo',
+			'str-tabletitle-recommended': 'Recomendado',
+			'str-tablecontent-minram': '+1GB de RAM',
+			'str-tablecontent-recracm': '2GB de RAM',
+			'str-tablecontent-mincpu': 'CPU x86_64 1,00 Ghz',
+			'str-tablecontent-mindisk': 'Armazenamento em disco de 15GB',
+			'str-tablecontent-recdisk': 'Armazenamento em disco de 15GB em SSD',
+			'str-title-autor-1': 'Equipe de Desenvolvimento do CuerdOS',
+			'str-title-check-1': 'Oficial',
+			'str-title-downloadlink-1': 'CuerdOS Padrão',
+			'str-content-downloadlink-1': 'Esta é a edição com o ambiente CuerdOS padrão, que possui o gerenciador de janelas Sway (Wayland) e I3 (Xorg).',
+			'str-title-downloadlink-2': 'CuerdOS Legado',
+			'str-content-downloadlink-2': 'Originalmente, o CuerdOS foi planejado apenas como Xfce, uma ideia inicialmente descartada, mas agora revivida como uma edição dedicada.',
+			'str-title-autor-2': 'Comunidade',
+			'str-title-check-2': 'Não-oficial',
+			'str-content-downloadlink-3': 'Edição com ambiente de desktop KDE Plasma, sua suíte de software muda para se adaptar ao Qt, por <a class="element" href="https://github.com/gatoverde95">Gatoverde95</a>.',
+			'str-content-downloadlink-4': 'CuerdOS + Cinnamon, uma edição que visa ser fácil de usar e amigável para todos os tipos de usuários, por <a class="element" href="https://github.com/gatoverde95">Gatoverde95</a>.',
+			'str-subtitle-nhsabout': 'Informações sobre as imagens NHS podem ser encontradas na seção <a class="element" href="#acerca">Sobre</a>.',
+			'str-subtitle-upgradewarning': '*Antes de testar o sistema, recomendamos fortemente que você atualize para a versão mais recente, pois ela terá todas as novas funcionalidades e bugs corrigidos.*',
+			'str-subtitle-logolicense': 'O <a class="element" href="https://github.com/CuerdOS/logo">logotipo do CuerdOS</a> está publicado sob licença <a class="element" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>',
+			'str-credits': 'Criado pela Equipe de Desenvolvimento do CuerdOS. ',
+		},
 		// ??? STRINGS
 		'fr':
 		{
@@ -146,18 +177,3 @@ function initializePageContent()
 		}
 		
 	};
-
-	var languageInfoElement = document.createElement('p');
-
-	if (translations[browserLanguage])
-	{
-		updatePageContent(translations, browserLanguage);
-	}
-	else
-	{
-		updatePageContent(translations, 'en');
-	}
-}
-
-// Call the initialization function
-initializePageContent();
