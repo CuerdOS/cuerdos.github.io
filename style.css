@@ -385,6 +385,11 @@ th, td {
 	align-items: start;
 }
 
+.grid-three {
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: start;
+}
 
 .grid-item-imagen {
 	padding-right: 20px;
@@ -394,9 +399,26 @@ th, td {
 .grid-item-imagen img {
 	width: 100%;
 	object-fit: cover;
+	min-width: 75%; 
+	max-width: 100%; 
 }
 
 .grid-item-imagen p {
+	max-width: 700px;
+}
+
+.grid-item-three {
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+.grid-item-three img {
+	width: 100%;
+	object-fit: cover;
+	max-width: 100%; 
+}
+
+.grid-item-three p {
 	max-width: 700px;
 }
 
