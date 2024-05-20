@@ -111,7 +111,7 @@ var translations =
 			'str-title-autor-2': 'Comunidad',
 			'str-title-check-2': 'No oficial',
 			'str-content-downloadlink-3': 'Edición con el entorno de escritorio KDE Plasma, su suit de software cambia para adaptarse a todo el entorno de Qt.',
-			'str-content-downloadlink-4': 'CuerdOS + Cinnamon, una edición que busca ser sencilla de usar y amigable para todo tipo de usuarios.',
+			'str-content-downloadlink-4': 'CuerdOS y el escritorio Cinnamon, una edición que busca ser sencilla de usar y amigable para todo tipo de usuarios.',
 			'str-content-downloadlink-5': 'La distribución del avión verde junto a un Gnome Shell modificado, para devolverlo a su distribución clásica y familiar.',
 			'str-desc-autor': 'Estas ediciones fueron creadas y son principalmente mantenidas por <a class="element" href="https://github.com/gatoverde95">Gatoverde95</a>.',
 			'str-subtitle-upgradewarning': '*Antes de probar el sistema, recomendamos encarecidamente que actualice a la última versión, ya que tendrá todas las nuevas características y errores corregidos.*',
