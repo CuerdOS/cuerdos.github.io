@@ -26,7 +26,7 @@ body {
 }
 
 .barra {
-	box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #3b3b3b;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -156,6 +156,14 @@ a {
 
 /* elementos */
 
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #3b3b3b;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .navegacion {
 	justify-content: space-between;
 	margin-left: auto;
@@ -211,7 +219,6 @@ a {
 	font-family: Roboto; sans-serif;
 	font-weight: bold;
 	justify-content: center;
-	align-items: center;
 }
 
 .menu-details {
@@ -418,12 +425,6 @@ th, td {
 	align-items: start;
 }
 
-.grid-three {
-	display: grid;
-	grid-template-columns: auto auto;
-	align-items: start;
-}
-
 .grid-item-imagen {
 	padding-right: 20px;
 	padding-left: 20px;
@@ -440,19 +441,21 @@ th, td {
 	max-width: 700px;
 }
 
-.grid-item-three {
-	padding-right: 1%;
-	padding-left: 1%;
+.grid-item-bigimage {
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
-.grid-item-three img {
+.grid-item-bigimage img {
 	width: 100%;
 	object-fit: cover;
+	min-width: 100%; 
 	max-width: 100%; 
 }
 
-.grid-item-three p {
-	max-width: 700px;
+.grid-item-bigimage p {
+	max-width: 600px;
+	text-align: left;
 }
 
 .lista {
