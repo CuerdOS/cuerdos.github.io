@@ -117,10 +117,6 @@ a {
 	width: 40px;
 }
 
-.barli:hover {
-	text-decoration: underline;
-}
-
 /* Carrusel */
 .carousel {
 	position: relative;
@@ -336,6 +332,12 @@ h2 {
 .element	{
 	color: var(--accolor);
 }
+
+.element:hover	{
+	color: var(--accolor);
+	text-decoration: underline;
+}
+
 
 h3 {
 	font-family: Roboto; sans-serif;
