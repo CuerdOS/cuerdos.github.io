@@ -35,16 +35,6 @@ body {
 	margin-bottom: 200px;
 }
 
-.barra2 {
-	border-bottom: solid 1px #E3E3E3;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10;
-	background-color: white;
-	margin-bottom: 200px;
-}
-
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -117,39 +107,6 @@ a {
 	width: 40px;
 }
 
-/* Carrusel */
-.carousel {
-	position: relative;
-	display: flex;
-	overflow-x: hidden;
-	scroll-snap-type: x mandatory;
-}
-
-.carousel img {
-	scroll-snap-align: center;
-}
-
-.prev,
-.next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	color: white;
-	background-color: transparent;
-	border: none;
-	font-size: 40px;
-	width: 80px;
-	text-shadow: 2px 2px grey;
-}
-
-.prev {
-	left: 0;
-}
-
-.next {
-	right: 0;
-}
-
 /* elementos */
 
 hr {
@@ -158,80 +115,6 @@ hr {
     background-color: #3b3b3b;
     margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.navegacion {
-	justify-content: space-between;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	list-style: none;
-	font-family: Roboto; sans-serif;
-	font-weight: bold;
-	font-size: 15px;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 0px;
-	margin-top: -15px;
-	margin-left: 40px;
-	margin-right: 40px;
-}
-
-.grid-item {
-	position: relative;
-	overflow: hidden;
-	margin: 15%;
-	border-radius: 20px;
-	border: solid 1px #E3E3E3;
-	background-color: black;
-}
-
-.grid-item:hover{
-	border: none;
-	box-shadow: 5px 5px 10px 2px #E3E3E3;
-	background-color: black;
-}
-
-.grid-item img {
-	width: 100%;
-	height: 80%;
-	object-fit: cover;
-}
-
-.grid-item p {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 20%;
-	margin: 0;
-	padding: 0px;
-	font-size: 16px;
-	line-height: 1.5;
-	display: flex;
-	font-family: Roboto; sans-serif;
-	font-weight: bold;
-	justify-content: center;
-}
-
-.menu-details {
-	display: none;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: white;
-	padding: 20px;
-	border-radius: 20px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-	z-index: 20;
-}
-
-.menu-details.active {
-	display: block;
 }
 
 .capsule {
@@ -247,14 +130,14 @@ hr {
 
 .container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor */
+    justify-content: center;
     margin-top: 40px;
-    align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;
 }
 
 .icon-with-text {
-    display: flex; /* Establece el diseño flex en el contenedor */
-    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    display: flex;
+    align-items: center;
     color: #95a244;
 }
 
@@ -357,69 +240,12 @@ th, td {
 		width: 33.33%;
 }
 
-.column-container {
-	display: grid;
-	grid-template-columns: auto auto;
-}
-
-.column-item1 {
-	padding-right: 20px;
-}
-
-.column-item2 {
-	padding-left: 20px;
-}
-
-.textleft {
-	text-align: left;
-
-} 
-
-/* Sobre nosotros */
-
-.grid-container2 {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 0px;
-	margin-top: -15px;
-	margin-left: 40px;
-	margin-right: 40px;
-	align-items: start;
-}
-
-.grid-item2 {
-	position: relative;
-	overflow: hidden;
-	margin: 15%;
-	border: none;
-	background-color: black;
-}
-
-.grid-item2 img {
-	width: 100%;
-	height: 60%;
-	object-fit: cover;
-}
-
-.grid-item2 p {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	padding: 0px;
-	font-size: 16px;
-	line-height: 1.5;
-	display: flex;
-	font-family: Roboto; sans-serif;
-	font-weight: regular;
-	justify-content: center;
-	align-items: center;
-}
-
 .titulo {
 	 margin-top: -1px;
 	 margin-bottom: -1px;
 }
+
+/* Grids */
 
 .grid-imagen {
 	display: grid;
@@ -443,27 +269,41 @@ th, td {
 	max-width: 700px;
 }
 
-.grid-item-bigimage {
+.grid-item-right {
 	padding-right: 50px;
 	padding-left: 50px;
 }
 
-.grid-item-bigimage img {
+.grid-item-right img {
 	width: 100%;
 	object-fit: cover;
-	min-width: 100%; 
 	max-width: 100%; 
 }
 
-.grid-item-bigimage p {
+.grid-item-right p {
 	max-width: 600px;
 	text-align: left;
 }
 
-.lista {
-	font-family: Roboto; sans-serif;
-	font-weight: normal;
-	font-size: 20px;
+.grid-item-left {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.grid-item-left h2 {
+	text-align: left;
+}
+
+.grid-item-left img {
+	width: 100%;
+	object-fit: cover;
+	max-width: 50px; 
+}
+
+.grid-item-left p {
+	max-width: 600px;
+	text-align: left;
+	margin-left: 60px;
 }
 
 .features {
