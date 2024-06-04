@@ -1,0 +1,9 @@
+MD5
+---------------------------------------------------------------------------------
+ed3322877c6a7933d3cb49e33014fb8a CuerdOS-1.1-Standard_amd64.iso
+3975949dc6e7bf731b8108e7cf670d76 CuerdOS-1.1-Standard-NHS_amd64.iso
+
+SHA1
+---------------------------------------------------------------------------------
+c4094e6e189a2ee8235ee4c2887f4c76cf58686d CuerdOS-1.1-Standard_amd64.iso
+699f01fde98b1a8ddc92169182a69ec277819195 CuerdOS-1.1-Standard-NHS_amd64.iso

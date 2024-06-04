@@ -1,0 +1,9 @@
+MD5
+---------------------------------------------------------------------------------
+fd6f917d041ada1b3bb896cfec15846e CuerdOS-1.1-Legacy_amd64.iso
+c2af7ed942047d5d1e3c7b6ed4eced3e CuerdOS-1.1-Legacy-NHS_amd64.iso
+
+SHA1
+---------------------------------------------------------------------------------
+6c43b5665ac3da57d281a9c627ff4a193c1361d6 CuerdOS-1.1-Legacy_amd64.iso
+ea71aaec43f3683a5dc95e5c9aea26d761d9cd58 CuerdOS-1.1-Legacy-NHS_amd64.iso
