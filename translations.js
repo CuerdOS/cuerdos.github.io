@@ -5,6 +5,8 @@ var translations =
 		{
 			'str-menu-about': 'About',
 			'str-menu-download': 'Download',
+			'str-download-option1': '&#10093; Official images',
+			'str-download-option2': '&#10093; Community spins',
 			'str-menu-wiki': 'Wiki',
 			'str-slogan': 'Optimized to the last pixel.',
 			'str-title-about': 'About',
@@ -60,7 +62,9 @@ var translations =
 		'es':
 		{
 			'str-menu-about': 'Acerca de',
-			'str-menu-download': 'Descargar',
+			'str-menu-download': 'Descargar &#9662',
+			'str-download-option1': '&#10093; Imágenes oficiales',
+			'str-download-option2': '&#10093; Spins comunitarios',
 			'str-menu-wiki': 'Wiki',
 			'str-slogan': 'Optimizado hasta el último píxel.',
 			'str-title-about': 'Acerca de',
@@ -116,6 +120,8 @@ var translations =
 		{
 			'str-menu-about': 'Sobre',
 			'str-menu-download': 'Baixar',
+			'str-download-option1': '&#10093; Imagens oficiais',
+			'str-download-option2': '&#10093; Spins da comunidade',
 			'str-menu-wiki': 'Wiki',
 			'str-slogan': 'Otimizado até o último pixel.',
 			'str-title-about': 'Sobre',
