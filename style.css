@@ -437,4 +437,13 @@ background-size: cover;transition: 0.6s;}
 		font-size: 32px;
 		width: 50%;
 	}
+	.dropdown-content {
+        	font-size:36px;
+	}
+
+	.barrbotons .dropdown-content {
+                font-size:38px;
+		min-width: 400px;
+        }
+
 }
