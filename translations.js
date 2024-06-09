@@ -4,7 +4,7 @@ var translations =
 		'en':
 		{
 			'str-menu-about': 'About',
-			'str-menu-download': 'Download',
+			'str-menu-download': 'Download &#9662',
 			'str-download-option1': '&#10093; Official images',
 			'str-download-option2': '&#10093; Community spins',
 			'str-menu-wiki': 'Wiki',
@@ -119,7 +119,7 @@ var translations =
 		'pt':
 		{
 			'str-menu-about': 'Sobre',
-			'str-menu-download': 'Baixar',
+			'str-menu-download': 'Baixar &#9662',
 			'str-download-option1': '&#10093; Imagens oficiais',
 			'str-download-option2': '&#10093; Spins da comunidade',
 			'str-menu-wiki': 'Wiki',
