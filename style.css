@@ -25,6 +25,37 @@ body {
 	color: var(--fgcolor);
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: white;
+}
+
 .barra {
 	border-bottom: 1px solid #3b3b3b;
 	position: fixed;
@@ -148,8 +179,60 @@ hr {
 }
 
 .icon-green{
-    margin-right: 10px; /* Añade un margen a la derecha del icono para separarlo del texto */
+    margin-right: 10px;
     filter: invert(57%) sepia(61%) saturate(380%) hue-rotate(28deg) brightness(95%) contrast(84%);
+}
+
+
+.search-container {
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.search-container h1 {
+	margin-bottom: 20px;
+	color: #333333;
+}
+
+.search-container form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-container input[type="text"] {
+	width: 500px;
+	padding: 20px;
+	border: 3px solid black;
+	border-radius: 20px;
+	font-size: 30px;
+	margin-right: 10px;
+	background-color: rgba(0, 0, 0, 0.0);
+	color: black;
+}
+
+.search-container input[type="text"]::placeholder {
+	color: #4d4d4d;
+}
+
+.search-container input[type="text"]:focus {
+	outline: none;
+	border: 3px solid black;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+	margin-bottom: 0%;
+	gap: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
@@ -162,6 +245,16 @@ footer {
 	font-family: Roboto, sans-serif;
 	font-size: 14px;
 	text-align: center;
+}
+
+.sticky {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
 }
 
 .left {
@@ -227,6 +320,10 @@ h2 {
 	text-decoration: underline;
 }
 
+.whitelement	{
+	color: white;
+	text-decoration: underline;
+}
 
 h3 {
 	font-family: Roboto, sans-serif;
@@ -316,7 +413,10 @@ th, td {
 	min-height: 30%;
 	display: flex;
 	text-align: center;
-	justify-content: space-between;margin: 5% 0%;margin-top: 2%; flex-direction: row;
+	justify-content: space-between;
+	margin: 5% 0%;
+	margin-top: 2%;
+	flex-direction: row;
 }
 
 .features li {
@@ -329,12 +429,6 @@ box-sizing: border-box;
 
 background-size: cover;transition: 0.6s;}
 
-.features {
-	display: flex;
-	text-align: center;
-	justify-content: space-between;
-	flex-direction: row;
-}
 .features p {
 	padding-top: 2vh;
 	font-size: 15px;
