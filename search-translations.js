@@ -19,7 +19,7 @@ var translations =
 		{
             'str-topmenu-1':'Inicio',
             'str-topmenu-2':'Acerca de',
-            'str-topmenu-3':'Descargas',
+            'str-topmenu-3':'Descargar',
             'str-topmenu-4':'Spins',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
