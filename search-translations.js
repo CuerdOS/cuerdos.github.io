@@ -4,9 +4,6 @@ var translations =
 		'en':
 		{
             'str-topmenu-1':'Home',
-            'str-topmenu-2':'About',
-            'str-topmenu-3':'Download',
-            'str-topmenu-4':'Spins',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
             'str-topmenu-7':'GitHub',
@@ -18,9 +15,6 @@ var translations =
 		'es':
 		{
             'str-topmenu-1':'Inicio',
-            'str-topmenu-2':'Acerca de',
-            'str-topmenu-3':'Descargar',
-            'str-topmenu-4':'Spins',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
             'str-topmenu-7':'GitHub',
@@ -32,9 +26,6 @@ var translations =
 		'pt':
 		{
             'str-topmenu-1':'Início',
-            'str-topmenu-2':'Sobre a',
-            'str-topmenu-3':'Baixar',
-            'str-topmenu-4':'Spins',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
             'str-topmenu-7':'GitHub',
