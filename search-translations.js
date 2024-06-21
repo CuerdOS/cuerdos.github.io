@@ -4,6 +4,7 @@ var translations =
 		'en':
 		{
             'str-topmenu-1':'Home',
+            'str-topmenu-2':'Wiki',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
             'str-topmenu-7':'GitHub',
@@ -15,6 +16,7 @@ var translations =
 		'es':
 		{
             'str-topmenu-1':'Inicio',
+            'str-topmenu-2':'Wiki',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
             'str-topmenu-7':'GitHub',
@@ -22,10 +24,11 @@ var translations =
             'str-search-1':'<input type="text" name="q" placeholder="Buscar en la web..." autofocus>',
             'str-footer-1':'© 2024 CuerdOS Dev Team. Este sitio está bajo <a class="whitelement" href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU GPL v3</a>.'
 		},
-        //PORTUGUESE STRINGS
+            //PORTUGUESE STRINGS
 		'pt':
 		{
             'str-topmenu-1':'Início',
+            'str-topmenu-2':'Wiki',
             'str-topmenu-5':'Changelog',
             'str-topmenu-6':'Sourceforge',
             'str-topmenu-7':'GitHub',
