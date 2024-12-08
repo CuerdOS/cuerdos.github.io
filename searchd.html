@@ -11,7 +11,6 @@
 			<script src="https://itzselenux.github.io/SJTSW/sjtsw.js"></script>
 	<style>
 		body {
-			background-image: url('images/searchbg.webp');
 		 	background-attachment: fixed;
 		  	background-size: cover;
 		  	background-position: center;
@@ -19,6 +18,14 @@
 		 	margin: 0;
 		}
 
+		.day {
+			background-image: url('images/searchbg.webp');
+		}
+		
+		.night {
+			background-image: url('images/searchbgnight.webp');
+		}
+		
 		input {
 			padding: 10px;
 		}
@@ -32,6 +39,28 @@
 	</style>
 </head>
 <body>
+    <script>
+        function setBackground() {
+            const hour = new Date().getHours(); // Obtiene la hora actual
+            const body = document.body;
+
+            if (hour >= 20 || hour < 8) {
+                // Entre 8 PM y 8 AM
+                body.classList.remove('day');
+                body.classList.add('night');
+            } else {
+                // Entre 8 AM y 8 PM
+                body.classList.remove('night');
+                body.classList.add('day');
+            }
+        }
+
+        // Ejecutar al cargar la página
+        setBackground();
+
+        // Repetir el chequeo cada hora (opcional)
+        setInterval(setBackground, 60 * 60 * 1000);
+    </script>
  <!-- Note: please don't leave empty strings on tags (for users with JS disabled)-->
 
  <!-- Barra de navegación -->
