@@ -110,14 +110,13 @@ a {
 	display: none;
 	position: absolute;
 	background-color: var(--bbgcolor);
-	min-width: 160px;
+	min-width: 240px;
 	border: 1px solid grey;
 	z-index: 1;
 }
 
 .barrbotons .dropdown-content {
 	font-weight: normal;
-	min-width: 230px;
 	font-size: 19px;
 }
 
