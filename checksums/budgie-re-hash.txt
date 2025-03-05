@@ -1,4 +1,4 @@
 MD5
 ---------------------------------------------------------------------------------
-c357ccb8f344db470ecddbf849c72a46 CuerdOS-1.2-Budgie-re_amd64.iso
+c357ccb8f344db470ecddbf849c72a46 CuerdOS-1.2.1-Budgie-re_amd64.iso
 
