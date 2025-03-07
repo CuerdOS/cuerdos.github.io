@@ -1,3 +1,3 @@
 MD5
 ---------------------------------------------------------------------------------
-b2b09ad09e62064a56d1e57040d17d8e  CuerdOS-1.2.1-Standard_amd64.iso
+bdf47e2d1d3d2554700231bccaf897df  CuerdOS-1.2.1-Standard_amd64.iso
