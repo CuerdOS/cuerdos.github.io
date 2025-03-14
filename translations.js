@@ -18,7 +18,7 @@ var translations =
 			'str-title-feature-2': 'Light and fashionable',
 			'str-content-feature-2': 'Unlike other lightweight distributions, CuerdOS is a system that opts for the avant-garde.',
 			'str-title-feature-3': 'Sway',
-			'str-content-feature-3': 'This distribution focuses on offering a great experience with Sway, although it also has i3 and Xfce.',
+			'str-content-feature-3': 'This distribution focuses on offering a great experience with Sway, although it also has xfce and much more environments on Visuals',
 			'str-title-feature-4': 'Own repositories',
 			'str-content-feature-4': 'CuerdOS has its own repositories where packages that are not in Debian are provided.',
 			'str-title-otherfeatures': 'Other technical features',
@@ -45,7 +45,15 @@ var translations =
 			'str-tablecontent-mindisk': '8.5GB Disk storage',
 			'str-tablecontent-recdisk': '8.5GB Disk storage on SSD',
 			'str-title-downloadlink-1': 'CuerdOS Standard',
+<<<<<<< Updated upstream
 			'str-content-downloadlink-1': 'This edition features CuerdOS as the default environment, including the Sway window manager.',
+=======
+<<<<<<< HEAD
+			'str-content-downloadlink-1': 'This is the edition with the default CuerdOS environment, which has Sway (Wayland) as principal window manager.',
+=======
+			'str-content-downloadlink-1': 'This edition features CuerdOS as the default environment, including the Sway window manager.',
+>>>>>>> 8c686394d85a2dd085af464fc7958609d19cfd48
+>>>>>>> Stashed changes
 			'str-title-downloadlink-2': 'CuerdOS Legacy',
 			'str-content-downloadlink-2': 'Originally planned as Xfce, CuerdOS was first discarded but has now returned as a dedicated edition.',
 			'str-subtitle-upgradewarning': '*Before testing the system, we strongly recommend that you upgrade to the latest version, as it will have all the new features and bugs fixed.*',
@@ -70,7 +78,7 @@ var translations =
 			'str-title-feature-2': 'Ligero y moderno',
 			'str-content-feature-2': 'A diferencia de otras distribuciones ligeras, CuerdOS es un sistema que opta por lo más avanzado.',
 			'str-title-feature-3': 'Sway',
-			'str-content-feature-3': 'Esta distribución se centra en ofrecer una gran experiencia con Sway, aunque también cuenta con i3 y Xfce.',
+			'str-content-feature-3': 'Esta distribución se centra en ofrecer una gran experiencia con Sway, aunque también cuenta con xfce y más entornos que se encuentran en el apartado de Visuals',
 			'str-title-feature-4': 'Repositorios propios',
 			'str-content-feature-4': 'CuerdOS tiene sus propios repositorios donde se proporcionan paquetes que no están en Debian.',
 			'str-title-otherfeatures': 'Otras características técnicas',
@@ -97,7 +105,15 @@ var translations =
 			'str-tablecontent-mindisk': '8.5GB de almacenamiento',
 			'str-tablecontent-recdisk': '8.5GB de almacenamiento en SSD',
 			'str-title-downloadlink-1': 'CuerdOS Standard',
+<<<<<<< Updated upstream
 			'str-content-downloadlink-1': 'Esta es la edición con el entorno de CuerdOS por defecto que tiene el gestor de ventanas Sway.',
+=======
+<<<<<<< HEAD
+			'str-content-downloadlink-1': 'Esta es la edición con el entorno predeterminado de CuerdOS, el cual posee el gestor de ventanas Sway (Wayland)',
+=======
+			'str-content-downloadlink-1': 'Esta es la edición con el entorno de CuerdOS por defecto que tiene el gestor de ventanas Sway.',
+>>>>>>> 8c686394d85a2dd085af464fc7958609d19cfd48
+>>>>>>> Stashed changes
 			'str-title-downloadlink-2': 'CuerdOS Legacy',
 			'str-content-downloadlink-2': 'CuerdOS, ideado como Xfce, fue descartado al inicio, pero ahora regresa como una edición dedicada',
 			'str-subtitle-upgradewarning': '*Antes de probar el sistema, recomendamos encarecidamente que actualice a la última versión, ya que tendrá todas las nuevas características y errores corregidos.*',
@@ -121,7 +137,7 @@ var translations =
 			'str-title-feature-2': 'Leve e moderno',
 			'str-content-feature-2': 'Ao contrário de outras distribuições leves, o CuerdOS é um sistema que opta pela vanguarda.',
 			'str-title-feature-3': 'Sway',
-			'str-content-feature-3': 'Esta distribuição foca em oferecer uma ótima experiência com o Sway, embora também tenha o i3 e o Xfce.',
+			'str-content-feature-3': 'Esta distribuição foca-se em oferecer uma óptima experiência com o Sway, embora também tenha o xfce e muito mais ambientes em Visuals',
 			'str-title-feature-4': 'Repositórios próprios',
 			'str-content-feature-4': 'CuerdOS possui seus próprios repositórios onde são fornecidos pacotes que não estão no Debian.',
 			'str-title-otherfeatures': 'Outras características técnicas',
@@ -148,7 +164,15 @@ var translations =
 			'str-tablecontent-mindisk': 'Armazenamento em disco de 8.5GB',
 			'str-tablecontent-recdisk': 'Armazenamento em disco de 8.5GB em SSD',
 			'str-title-downloadlink-1': 'CuerdOS Padrão',
+<<<<<<< Updated upstream
 			'str-content-downloadlink-1': 'Esta edição traz o CuerdOS como ambiente padrão, incluindo o gerenciador de janelas Sway.',
+=======
+<<<<<<< HEAD
+			'str-content-downloadlink-1': 'Esta é a edição com o ambiente padrão do CuerdOS, que tem o Sway (Wayland) como gerenciador de janelas principal.',
+=======
+			'str-content-downloadlink-1': 'Esta edição traz o CuerdOS como ambiente padrão, incluindo o gerenciador de janelas Sway.',
+>>>>>>> 8c686394d85a2dd085af464fc7958609d19cfd48
+>>>>>>> Stashed changes
 			'str-title-downloadlink-2': 'CuerdOS Legado',
 			'str-content-downloadlink-2': 'Inicialmente pensado como Xfce, o CuerdOS foi descartado, mas agora retorna como edição dedicada.',
 			'str-spins-image': '<input type="image" src="images/spins_pt.webp" alt="cuerdos spins" width="85%" onclick="window.location.href=\'spins.html\'">',
