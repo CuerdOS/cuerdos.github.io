@@ -36,7 +36,7 @@ var translations =
 			'str-content-downloadlink-6': 'Edición con entorno de escritorio LXQt, con un suit de software más orientada a Qt y una personalización original y más familiar',
 			'str-content-downloadlink-7': 'Edición con el entorno de escritorio Mate, con una personalización inspirada en el escritorio ElementaryOS Pantheon',
 			'str-content-downloadlink-8': 'Edición con el entorno de escritorio Budgie, con una personalización original y más familiar',
-			'str-content-downloadlink-9': 'Una imagen experimental de CuerdOS que monta el escritorio Xfce y el gestor de ventanas I3, proporcionando una experiencia con la comidad de un entorno de escritorio y la fluidez de un gestor de ventanas tipo tiling',
+			'str-content-downloadlink-9': 'Una imagen experimental de CuerdOS que monta el escritorio Xfce y el gestor de ventanas I3, proporcionando una experiencia con la comodidad de un entorno de escritorio y la fluidez de un gestor de ventanas tipo tiling',
 			'str-desc-autor': 'Estas ediciones fueron creadas y son principalmente mantenidas por <a class="element" href="https://github.com/gatoverde95">Gatoverde95</a>.',
 			'str-credits': 'Creado por CuerdOS Dev Team. ',
 		},
