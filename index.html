@@ -9,10 +9,10 @@
 			<script src="translations.js"></script>
 			<!--Using SJTSW as translation system-->
 			<script src="https://itszariep.github.io/SJTSW/sjtsw.js"></script>
+			<script type="module" src="src/banner/notification-component.js" ></script>
 </head>
 <body>
  <!-- Note: please don't leave empty strings on tags (for users with JS disabled) -->
-
  <!-- Barra de navegación -->
 	<nav class="barra" style="display: flex; justify-content: space-between; align-items: center;">
 		<input class="barlinks" type="image" src="images/cuerdos_logo.webp" alt="cuerdos logo" onclick="window.location.href='index.html'">
@@ -197,5 +197,6 @@
 </div>
 </footer>
 <script>SJTSW_TranslatePage();</script>
+<notification-banner></notification-banner>
 </body>
 </html>
