@@ -75,7 +75,7 @@ const translations = {
     "str-launch-errors": "Launch Errors",
       //Spins
     "str-content-download-description-budgie":"This flavour has Budgie as desktop environment with finishes that bring back memories of Solus.",
-    "str-content-download-description-Sway": "This flavour has Sway as main WM for those who prefers something lighter than XFCE.",
+    "str-content-download-description-Sway": "This flavour has Sway as main WM for those who prefers something lighter than XFCE. (Live user is 'user' and password is 'live'.)",
     "str-content-download-description-cinnamon" : "This flavour has Cinnamon as main desktop environment with familiar and modern design.",
     "str-content-download-description-lxqt": "This flavour has LXQt as main desktop environment with a polished design and better finish.",
     "str-content-download-description-mate": "This flavour has Mate as main desktop environment with a classic and modern design.",
@@ -212,7 +212,7 @@ const translations = {
     "str-content-download-description-sway": "Este sabor monta Sway como gestor de ventanas predeterminado, es un gestor de ventanas Wayland parecido a i3.",
     "str-content-download-description-budgie":"Este sabor trae Budgie como escritorio principal con unos acabados que traen recuerdos de Solus.",
     "str-content-download-description-xfce": "Este sabor trae XFCE como entorno de escritorio predeterminado, con un acabado moderno y cómodo para cualquier usuario.",
-    "str-content-download-description-Sway": "Este sabor monta Sway como entorno estrella, para aquellos que quieren algo más sencillo y ligero que XFCE.",
+    "str-content-download-description-Sway": "Este sabor monta Sway como entorno estrella, para aquellos que quieren algo más sencillo y ligero que XFCE. (Usuario del live cd 'user' y contraseña 'live'.)",
     "str-content-download-description-cinnamon" : "Este sabor trae Cinnamon como escritorio principal con acabados familiares y modernos.",
     "str-content-download-description-lxqt": "Este sabor trae LXQt como escritorio principal, ahora más pulida que nunca.",
     "str-content-download-description-mate": "Este sabor trae Mate como escritorio principal con una configuración clásica pero moderna.",

@@ -750,7 +750,7 @@ const template = /* html */ `
               La distribución de la avioneta y los tonos olivas presenta su nueva edición Budgie, con acabados más estéticos y novedades curiosas..
             </p>
             <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Plasma/CuerdOS-2.0-Plasma.iso/download" 
+              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Budgie/CuerdOS-2.0-Budgie.iso/download" 
                  class="btn btn-primary spin-primary budgie-btn">
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
