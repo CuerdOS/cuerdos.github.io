@@ -190,7 +190,7 @@ const template = /* html */ `
         <a href="#about" class="nav-link about" data-i18n="str-menu-about">About</a>
         <a href="#download" class="nav-link download" data-i18n="str-menu-download">Download</a>
         <a href="https://cuerdoswiki.blogspot.com/" class="nav-link" data-i18n="str-menu-wiki">Wiki</a>
-        <a href="" class="nav-link changelog" data-i18n="str-menu-changelog">Changelog</a>
+        <a href="changelogs.html" class="nav-link changelog" data-i18n="str-menu-changelog">Changelog</a>
       </div>
       <div class="nav-actions">
           <a href="index.html" class="nav-icon">

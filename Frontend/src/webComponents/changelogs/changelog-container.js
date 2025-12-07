@@ -213,12 +213,12 @@ const template = /* html */ `
       </div>
 
       <div class="changelog-grid">
-        <!-- Skymint 2.0 -->
+        <!-- Skycatcher 2.0 -->
         <div class="changelog-item">
           <div class="changelog-header">
             <div class="version-badge">v2.0</div>
             <div>
-              <h2 class="changelog-title">Skymint 2.0</h2>
+              <h2 class="changelog-title">Skycatcher 2.0</h2>
               <p class="changelog-subtitle" data-i18n="str-changelog-news-changes-2.0-r">Major release with new base and enhanced features</p>
             </div>
           </div>
@@ -227,10 +227,17 @@ const template = /* html */ `
             <div class="changelog-section-group">
               <h3 class="changelog-section-title" data-i18n="str-changelog-news-changes-2.0-main-news-title"> Core Changes</h3>
               <ul class="changelog-list">
-                <li class="changelog-list-item"><span data-i18n="str-changelog-news-changes-2.0-main-news-1">Migration to the new base: </span> <span class="changelog-highlight">Linux Mint</span></li>
+                <li class="changelog-list-item"><span data-i18n="str-changelog-news-changes-2.0-main-news-1">Update to the new Debian release: </span> <span class="changelog-highlight">Trixie (13)</span></li>
                 <li class="changelog-list-item"> <span data-i18n="str-changelog-news-changes-2.0-main-news-2-1">New </span><span class="changelog-new" data-i18n="str-changelog-news-changes-2.0-main-news-2-2">Fastfetch configuration</span> <span data-i18n="str-changelog-news-changes-2.0-main-news-2-3">to get a better style </span></li>
-                <li class="changelog-list-item"><span class="changelog-highlight">Nala</span><span data-i18n="str-changelog-news-changes-2.0-main-news-3">as default frontend for APT </span></li>
-                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-4">Refreshed styles for new ISOs, new version new life </span></li>
+                <li class="changelog-list-item"><span class="changelog-highlight">Yelena Store</span><span data-i18n="str-changelog-news-changes-2.0-main-news-3">as replace for Bauh Store </span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-4">Refreshed styles for new ISOs, new version new life.</span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-5">New kernel 6.12.58 with a new Zram configuration to get better performance using ZSTD algorithm. </span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-6">Sway with pywal preinstalled and a new design.</span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-7">New default browser, Vivaldi.</span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-8">CuerdTools updated and remaked.</span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-9">New Nvidia drivers installer and a new automatized upgrade program to update from CuerdOS 1.2.1.</span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-10">New wallpapers and refreshed style.</span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.0-main-news-11">All published by CuerdOS Public License v1.0.</span></li>
               </ul>
             </div>
 
@@ -254,42 +261,6 @@ const template = /* html */ `
               <h3 class="changelog-section-title" data-i18n="str-changelog-news-changes-2.0-SystemChanges-title"> System Changes</h3>
               <ul class="changelog-list">
                 <li class="changelog-list-item"><span class="changelog-highlight">Ananicy</span> <span data-i18n="str-changelog-news-changes-2.0-newsFeatures-2-1">service disabled by default, the user must intervene if they require the service </span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Aeralis 1.3 -->
-        <div class="changelog-item">
-          <div class="changelog-header">
-            <div class="version-badge">v1.3</div>
-            <div>
-              <h2 class="changelog-title">Aeralis 1.3</h2>
-              <p class="changelog-subtitle" data-i18n="str-changelog-news-changes-1.3-r">Maintenance release with minimal updates</p>
-            </div>
-          </div>
-          
-          <div class="changelog-content">
-            <div class="changelog-section-group">
-              <h3 class="changelog-section-title" data-i18n="str-changelog-news-change-1.3-maintenance-title"> Maintenance Mode</h3>
-              <ul class="changelog-list">
-                <li class="changelog-list-item"><span class="changelog-highlight">XFCE</span> <span data-i18n="str-changelog-news-change-1.3-maintenance-1">is the only version available for the old stable version </span></li>
-                <li class="changelog-list-item"><span data-i18n="str-changelog-news-change-1.3-maintenance-2">You will only receive </span> <span class="changelog-highlight" data-i18n="str-changelog-news-change-1.3-maintenance-2-1">kernel updates</span> <span data-i18n="str-changelog-news-change-1.3-maintenance-2-2"> as it remains in minimal maintenance </span></li>
-              </ul>
-            </div>
-
-            <div class="changelog-section-group">
-              <h3 class="changelog-section-title" data-i18n="str-changelog-news-change-1.3-visual-title"> Visual Updates</h3>
-              <ul class="changelog-list">
-                <li class="changelog-list-item"><span data-i18n="str-changelog-news-change-1.3-visual-2-1">New style</span></li>
-                <li class="changelog-list-item"><span data-i18n="str-changelog-news-change-1.3-visual-3-1">New </span><span class="changelog-new" data-i18n="str-changelog-news-change-1.3-visual-3-2">Fastfetch configuration</span></li>
-              </ul>
-            </div>
-
-            <div class="changelog-section-group">
-              <h3 class="changelog-section-title" data-i18n="str-changelog-news-change-1.3-SystemChanges-title"> System Changes</h3>
-              <ul class="changelog-list">
-                <li class="changelog-list-item"><span class="changelog-highlight">Ananicy</span> <span data-i18n="str-changelog-news-change-1.3-SystemChanges-1">service disabled by default, the user must intervene if they require the service</span></li>
               </ul>
             </div>
           </div>
