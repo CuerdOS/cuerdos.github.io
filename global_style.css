@@ -1,0 +1,110 @@
+/* Import Roboto Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* CSS Variables*/
+:root {
+  --background-dark: #0a0a0a;
+  --background-card: #1a1a1a;
+  --background-secondary: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  --border-color: #3a3a3a;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --font-family: "Roboto", sans-serif;
+  
+    /* Green Colors */
+  --primary-green: #a9b650;
+  --primary-green-hover: #b2c530;
+  --primary-green-light: rgba(169, 182, 80, 0.1);
+  --color-light-green: #90f755;
+  --color-mid-green: #5dc915;
+  --color-green: #22c52a;
+    /* Gradient colors */
+  --gradient-primary: linear-gradient(135deg, var(--primary-green), #8fa83d);
+  --gradient-secondary: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  --gradient-title: linear-gradient(135deg, var(--primary-green) 0%, #ffffff 100%);
+  
+    /* Background Main */
+  --background-main :linear-gradient(180deg, var(--background-card) 0%, var(--background-dark) 100%);
+
+
+  /* Sections vars */
+  
+  --background-section :rgba(255, 255, 255, 0);
+  --section-padding: 4rem 0;
+  --section-description-color: #cccccc;
+
+  
+  /* Size Containers */
+  
+  --container-width: 1920px;
+  --container-margin: 0 auto;
+  --container-padding: 0 1.2rem;
+
+  /* Mobile Size Containers */
+  
+  --mobile-container-margin: 0 auto;
+  --mobile-container-padding: 0 1.2rem;
+  
+  /* Text vars*/
+  --landing-title: 5rem;
+  --landing-subtitle: 1.7rem;
+  --landing-description: 1.4rem;
+
+  --mobile-landing-title: 3rem;
+  --mobile-landing-subtitle: 1.4rem;
+  --mobile-landing-description: 1rem;
+
+  --section-title-font: 3.5rem;
+  --section-description-font: 1.6rem;
+  --section-subtitle-font: 1.3rem;
+
+  --mobile-section-title-font: 1.8rem;
+  --mobile-section-description-font: 1.1rem;
+
+  --button-font: 1rem;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-size: 1.35rem;
+}
+
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+}
+p {
+  color: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
