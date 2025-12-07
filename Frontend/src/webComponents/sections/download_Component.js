@@ -442,7 +442,7 @@ const template = /* html */ `
     <div class="container">
       <div class="section-title">
         <h1>
-          <span data-i18n="str-title-download">Download CuerdOS Cessna 1.2.1</span>
+          <span data-i18n="str-title-download">Download CuerdOS Skycatcher 2.0</span>
         </h1>
         <p class="section-description" data-i18n="str-content-download-1">
           Choose your preferred edition and start your journey with CuerdOS today.
