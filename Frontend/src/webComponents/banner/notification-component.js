@@ -41,7 +41,7 @@ class NotificationBanner extends HTMLElement {
       minBtn.textContent = '−'
       minBtn.title = 'Minimizar'
       maxBtn.style.display = 'flex'
-      notification.src = 'images/notification_advise.jpg'
+      notification.src = 'Frontend/src/Banner/notification_advise.jpg'
       notification_p.style.display = 'flex'
     }
   }
@@ -57,7 +57,7 @@ class NotificationBanner extends HTMLElement {
       container.classList.add('maximized')
       maxBtn.style.display = 'none'
       notification_p.style.display = 'none'
-      notification.src = 'images/notification_image.jpg'
+      notification.src = 'Frontend/src/Banner/notification_image.jpg'
 
     } 
   }
@@ -295,8 +295,8 @@ class NotificationBanner extends HTMLElement {
       <div class="notification-container">
         <div class="notification-header">
           <div class="header-left">
-            <div class="notification-icon"><img src="images/cuerdos_logo.webp" alt=""></div>
-            <span class="notification-name">Noticia CuerdOS</span>
+            <div class="notification-icon"><img src="Frontend/src/Images/cuerdos_logo.webp" alt=""></div>
+            <span class="notification-name">Noticias CuerdOS</span>
           </div>
           <div class="header-controls">
             <button class="control-btn btn-minimize" title="Minimizar">−</button>
@@ -305,10 +305,10 @@ class NotificationBanner extends HTMLElement {
           </div>
         </div>
         <div class="notification-content">
-          <img class="notification-image" src="images/notification_advise.jpg" alt="Notificacion">
+          <img class="notification-image" src="Frontend/src/Banner/notification_advise.jpg" alt="Notificacion">
           <div class="content-text">
-            <h3>Las nuevas ediciones basadas en debian 13 están por salir</h3>
-            <p>Haz clic aquí para más información</p>
+            <h3 data-i18n="str-content-banner-title">Gracias por el recibimiento y feedback de esta nueva edición. </h3>
+            <p data-i18n="str-content-banner-text">Haz clic aquí para más</p>
             <div class="stuff-url">CuerdOS Team</div>
           </div>
         </div>

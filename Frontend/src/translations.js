@@ -133,7 +133,10 @@ const translations = {
     "str-changelog-news-change-1.3-visual-3-2" : "Fastfetch configuration",
       //SystemChanges
     "str-changelog-news-change-1.3-SystemChanges-title" : "System Changes",
-    "str-changelog-news-change-1.3-SystemChanges-1" : " service disabled by default, the user must intervene if they require the service"
+    "str-changelog-news-change-1.3-SystemChanges-1" : " service disabled by default, the user must intervene if they require the service",
+      //Notification-component
+    "str-content-banner-title":" Thank you for the reception and feedback of this new edition",
+    "str-content-banner-text":"Click, here to get more info."
   },
   //SPANISH STRINGS
   es: {
@@ -270,7 +273,10 @@ const translations = {
     "str-changelog-news-change-1.3-visual-3-2" : "configuración para Fastfetch",
       //SystemChanges
     "str-changelog-news-change-1.3-SystemChanges-title" : "Cambios del sistema",
-    "str-changelog-news-change-1.3-SystemChanges-1" : "deshabilitado por defecto, el usuario debe intervenir si requiere del servicio"
+    "str-changelog-news-change-1.3-SystemChanges-1" : "deshabilitado por defecto, el usuario debe intervenir si requiere del servicio",
+      //Notification-component
+    "str-content-banner-title":"Gracias por el recibimiento y feedback de esta nueva edición. ",
+    "str-content-banner-text":"Haz clic aquí para más"
   },
 }
 // Función para detectar el idioma del navegador

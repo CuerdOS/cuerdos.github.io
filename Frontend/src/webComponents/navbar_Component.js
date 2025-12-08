@@ -193,7 +193,7 @@ const template = /* html */ `
         <a href="changelogs.html" class="nav-link changelog" data-i18n="str-menu-changelog">Changelog</a>
       </div>
       <div class="nav-actions">
-          <a href="index.html" class="nav-icon">
+          <a href="https://github.com/CuerdOS" class="nav-icon">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="24" 
@@ -308,7 +308,6 @@ class NavbarComponent extends HTMLElement {
         behavior: "smooth",
       })
     } else {
-      // Fallback: scroll to approximate positions based on section names
       const sectionMap = {
         about: 0.15,
         technical: 0.4,
