@@ -280,8 +280,6 @@ class NotificationBanner extends HTMLElement {
         @media (max-width: 650px) {
           .notification-container {
             width: calc(100% - 40px);
-            right: 20px;
-            left: 20px;
           }
 
           .notification-container.maximized {
