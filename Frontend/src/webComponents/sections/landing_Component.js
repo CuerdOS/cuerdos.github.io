@@ -313,7 +313,18 @@ class LandingComponent extends HTMLElement {
         if (!target) {
           target = document.querySelector(`#${sectionId}`)
         }
-
+        if (!target) {
+          const allComponents = document.querySelectorAll("*")
+          for (const component of allComponents) {
+            if (component.shadowRoot) {
+              const shadowTarget = component.shadowRoot.querySelector(`#${sectionId}`)
+              if (shadowTarget) {
+                target = shadowTarget
+                break
+              }
+            }
+          }
+        }
         if (target) {
           const offsetTop = target.offsetTop - 80
           window.scrollTo({
