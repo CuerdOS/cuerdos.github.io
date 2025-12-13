@@ -509,6 +509,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Xfce/CuerdOS-2.0-Xfce.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://archive.org/download/cuerdos-2.0_xfce/CuerdOS-2.0-Xfce.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0_xfce/cuerdos-2.0_xfce_archive.torrent" 
@@ -544,6 +546,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Sway/CuerdOS-2.0-Sway.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://archive.org/download/cuerdos-2.0-sway/CuerdOS-2.0-Sway.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0-sway/cuerdos-2.0-sway_archive.torrent" 
@@ -579,6 +583,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Cinnamon/CuerdOS-2.0-Cinnamon.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://ia802303.us.archive.org/3/items/cuerdos-2.0-cinnamom/CuerdOS-2.0-Cinnamon-XLibre.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0-cinnamom/cuerdos-2.0-cinnamom_archive.torrent" 
@@ -614,6 +620,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-LXQt/CuerdOS-2.0-LXQt.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://ia903405.us.archive.org/28/items/cuerdos-2.0-lxqt/CuerdOS-2.0-LXQt-XLibre.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0-lxqt/cuerdos-2.0-lxqt_archive.torrent" 
@@ -649,6 +657,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Mate/CuerdOS-2.0-Mate.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://dn721704.ca.archive.org/0/items/cuerdos-2.0-mate-xlibre/CuerdOS-2.0-MATE-XLibre.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0-mate-xlibre/cuerdos-2.0-mate-xlibre_archive.torrent" 
@@ -684,6 +694,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Gnome/CuerdOS-2.0-Gnome.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://archive.org/download/cuerd-os-2.0-gnome/CuerdOS-2.0-Gnome.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerd-os-2.0-gnome/cuerd-os-2.0-gnome_archive.torrent" 
@@ -719,6 +731,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Plasma/CuerdOS-2.0-Plasma.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://archive.org/download/cuerdos-2.0-plasma/CuerdOS-2.0-Plasma.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0-plasma/cuerdos-2.0-plasma_archive.torrent" 
@@ -755,6 +769,8 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
+                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Budgie/CuerdOS-2.0-Budgie.iso" 
+                   class="btn btn-outline">Unizar</a>
                 <a href="https://archive.org/download/cuerdos-2.0-budgie/CuerdOS-2.0-Budgie-XLibre.iso" 
                    class="btn btn-outline">Archive</a>
                 <a href="https://archive.org/download/cuerdos-2.0-budgie/cuerdos-2.0-budgie_archive.torrent" 
