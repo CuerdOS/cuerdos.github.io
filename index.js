@@ -11,4 +11,5 @@ import "./Frontend/src/webComponents/sections/technical_Component.js"
 // Other Imports
 
 import "./Frontend/src/translations.js"
-import "./Frontend/src/webComponents/banner/notification-component.js"
+// Banner notification 
+// import "./Frontend/src/webComponents/banner/notification-component.js"
