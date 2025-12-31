@@ -209,6 +209,7 @@ const styles = /* css */ `
     display: flex;
     flex-direction: column;
     position: relative;
+    min-width: 100%;
   }
 
   .dropdown-toggle {
@@ -227,7 +228,7 @@ const styles = /* css */ `
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     padding: 0.5rem 0;
-    min-width: 28rem;
+    min-width: fit-content;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -509,12 +510,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Xfce/CuerdOS-2.0-Xfce.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://archive.org/download/cuerdos-2.0_xfce/CuerdOS-2.0-Xfce.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0_xfce/cuerdos-2.0_xfce_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Xfce/CuerdOS-2.0-Xfce.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://archive.org/download/cuerdos-2.0_xfce/CuerdOS-2.0-Xfce.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0_xfce/cuerdos-2.0_xfce_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Xfce.md5" class="spin-checksum">
                 Checksums
@@ -546,12 +552,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Sway/CuerdOS-2.0-Sway.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://archive.org/download/cuerdos-2.0-sway/CuerdOS-2.0-Sway.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0-sway/cuerdos-2.0-sway_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Sway/CuerdOS-2.0-Sway.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-sway/CuerdOS-2.0-Sway.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-sway/cuerdos-2.0-sway_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Sway.md5" class="spin-checksum">
                 Checksums
@@ -583,12 +594,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Cinnamon/CuerdOS-2.0-Cinnamon.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://ia802303.us.archive.org/3/items/cuerdos-2.0-cinnamom/CuerdOS-2.0-Cinnamon-XLibre.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0-cinnamom/cuerdos-2.0-cinnamom_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Cinnamon/CuerdOS-2.0-Cinnamon.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://ia802303.us.archive.org/3/items/cuerdos-2.0-cinnamom/CuerdOS-2.0-Cinnamon-XLibre.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-cinnamom/cuerdos-2.0-cinnamom_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Cinnamon.md5" class="spin-checksum">
                 Checksums
@@ -620,12 +636,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-LXQt/CuerdOS-2.0-LXQt.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://ia903405.us.archive.org/28/items/cuerdos-2.0-lxqt/CuerdOS-2.0-LXQt-XLibre.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0-lxqt/cuerdos-2.0-lxqt_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-LXQt/CuerdOS-2.0-LXQt.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://ia903405.us.archive.org/28/items/cuerdos-2.0-lxqt/CuerdOS-2.0-LXQt-XLibre.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-lxqt/cuerdos-2.0-lxqt_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-LXQt.md5" class="spin-checksum">
                 Checksums
@@ -657,12 +678,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Mate/CuerdOS-2.0-Mate.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://dn721704.ca.archive.org/0/items/cuerdos-2.0-mate-xlibre/CuerdOS-2.0-MATE-XLibre.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0-mate-xlibre/cuerdos-2.0-mate-xlibre_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Mate/CuerdOS-2.0-Mate.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://dn721704.ca.archive.org/0/items/cuerdos-2.0-mate-xlibre/CuerdOS-2.0-MATE-XLibre.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-mate-xlibre/cuerdos-2.0-mate-xlibre_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Mate.md5" class="spin-checksum">
                 Checksums
@@ -694,12 +720,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Gnome/CuerdOS-2.0-Gnome.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://archive.org/download/cuerd-os-2.0-gnome/CuerdOS-2.0-Gnome.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerd-os-2.0-gnome/cuerd-os-2.0-gnome_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Gnome/CuerdOS-2.0-Gnome.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://archive.org/download/cuerd-os-2.0-gnome/CuerdOS-2.0-Gnome.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerd-os-2.0-gnome/cuerd-os-2.0-gnome_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Gnome.md5" class="spin-checksum">
                 Checksums
@@ -731,12 +762,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Plasma/CuerdOS-2.0-Plasma.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://archive.org/download/cuerdos-2.0-plasma/CuerdOS-2.0-Plasma.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0-plasma/cuerdos-2.0-plasma_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Plasma/CuerdOS-2.0-Plasma.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-plasma/CuerdOS-2.0-Plasma.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-plasma/cuerdos-2.0-plasma_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Plasma.md5" class="spin-checksum">
                 Checksums
@@ -769,12 +805,17 @@ const template = /* html */ `
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
               <div class="spin-secondary">
-                <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Budgie/CuerdOS-2.0-Budgie.iso" 
-                   class="btn btn-outline">Unizar</a>
-                <a href="https://archive.org/download/cuerdos-2.0-budgie/CuerdOS-2.0-Budgie-XLibre.iso" 
-                   class="btn btn-outline">Archive</a>
-                <a href="https://archive.org/download/cuerdos-2.0-budgie/cuerdos-2.0-budgie_archive.torrent" 
-                   class="btn btn-outline">Torrent</a>
+                <div class="download-dropdown">
+                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
+                  <div class="dropdown-content">
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Budgie/CuerdOS-2.0-Budgie.iso"
+                     class="dropdown-item">Unizar</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-budgie/CuerdOS-2.0-Budgie-XLibre.iso"
+                     class="dropdown-item">Archive</a>
+                    <a href="https://archive.org/download/cuerdos-2.0-budgie/cuerdos-2.0-budgie_archive.torrent"
+                     class="dropdown-item">Torrent</a>
+                  </div>
+                </div>
               </div>
               <a href="checksums/CuerdOS-2.0-Budgie.md5" class="spin-checksum">
                 Checksums
