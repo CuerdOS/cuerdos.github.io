@@ -105,7 +105,7 @@ const translations = {
     "str-changelog-news-changes-2.1-main-desktops-sway-1":"SnapWay preinstaled on Sway to record screen and do screenshots.",
     "str-changelog-news-changes-2.1-main-desktops-sway-2":"Swaylock-fancy replaced by GtkLock.",
     "str-changelog-news-changes-2.1-main-desktops-sway-3":"SwayOSD added to Sway.",
-    "str-changelog-news-changes-2.1-main-desktops-sway-4":"Cambios estéticos en waybar para un toque más moderno Waybar updated to a new and modern design.",
+    "str-changelog-news-changes-2.1-main-desktops-sway-4":"Waybar updated to a new and modern design.",
     "str-changelog-news-changes-2.1-main-desktops-labwc-1":"LabWC replaces LXQt",
     "str-changelog-news-changes-2.1-main-cuerdtools-1":" Yelena Hello replaced by K-Hello.",
     "str-changelog-news-changes-2.1-main-cuerdtools-2":"Wasabi replaces Celluloid and Haruna.",
