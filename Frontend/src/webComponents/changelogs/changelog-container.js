@@ -213,6 +213,56 @@ const template = /* html */ `
       </div>
 
       <div class="changelog-grid">
+        <!-- Skycatcher 2.1 -->
+        <div class="changelog-item">
+          <div class="changelog-header">
+            <div class="version-badge">v2.1</div>
+            <div>
+              <h2 class="changelog-title">Skycatcher 2.1</h2>
+              <p class="changelog-subtitle" data-i18n="str-changelog-news-changes-2.1-r">Major release with major updates and new features</p>
+            </div>
+          </div>
+          
+          <div class="changelog-content">
+            <div class="changelog-section-group">
+              <h3 class="changelog-section-title" data-i18n="str-changelog-news-changes-2.1-main-news-title"></h3>
+              <ul class="changelog-list">
+                <li class="changelog-list-item"> <span data-i18n="str-changelog-news-changes-2.1-main-news"></span></li>
+                <li class="changelog-list-item"> <span data-i18n="str-changelog-news-changes-2.1-main-news-1"></span></li>
+                <li class="changelog-list-item"><span data-i18n="str-changelog-news-changes-2.1-main-news-2"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-news-3"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-kernel-1"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-kernel-2"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-changes-1"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-1"></span></li> 
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-2"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-3"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-4"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-5"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-6"></span></li> 
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-kde-7"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-xfce-1"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-sway-1"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-sway-2"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-sway-3"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-desktops-sway-4"></span></li>
+                <li class="changelog-list-item" > <span data-i18n= "str-changelog-news-changes-2.1-main-desktops-labwc-1"></span></li>
+                <li class="changelog-list-item" > <span data-i18n="str-changelog-news-changes-2.1-main-cuerdtools-1"></span></li>
+                <li class="changelog-list-item" > <span data-i18n= "str-changelog-news-changes-2.1-main-cuerdtools-2"></span></li>
+                <li class="changelog-list-item" > <span data-i18n= "str-changelog-news-changes-2.1-main-cuerdtools-3"></span></li> 
+                <li class="changelog-list-item" > <span data-i18n= "str-changelog-news-changes-2.1-main-cuerdtools-4"></span></li>
+              </ul>
+            </div>
+
+            <div class="changelog-section-group">
+              <h3 class="changelog-section-title" data-i18n="str-changelog-news-changes-2.1-deprecated-news-title"></h3>
+              <ul class="changelog-list">
+                <li class="changelog-list-item" ><span data-i18n="str-changelog-news-changes-2.1-deprecated-news-2-1"></span><span class="changelog-deprecated" data-i18n="str-changelog-news-changes-2.1-deprecated-news-2-2"></span></li>
+            </div>
+          </div>
+        </div>
+
+      <div class="changelog-grid">
         <!-- Skycatcher 2.0 -->
         <div class="changelog-item">
           <div class="changelog-header">

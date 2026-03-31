@@ -443,7 +443,7 @@ const template = /* html */ `
     <div class="container">
       <div class="section-title">
         <h1>
-          <span data-i18n="str-title-download">Download CuerdOS Skycatcher 2.0</span>
+          <span data-i18n="str-title-download">Download CuerdOS Skycatcher 2.1</span>
         </h1>
         <p class="section-description" data-i18n="str-content-download-1">
           Choose your preferred edition and start your journey with CuerdOS today.
@@ -463,7 +463,7 @@ const template = /* html */ `
                   <span data-i18n="str-tablecontent-minram">1GB of RAM</span>
                 </li>
                 <li class="requirement-item">
-                  <span data-i18n="str-tablecontent-mindisk">8.5GB disk storage</span>
+                  <span data-i18n="str-tablecontent-mindisk">10GB disk storage</span>
                 </li>
               </ul>
 
@@ -478,7 +478,7 @@ const template = /* html */ `
                   <span data-i18n="str-tablecontent-recram">2GB of RAM</span>
                 </li>
                 <li class="requirement-item">
-                  <span data-i18n="str-tablecontent-recdisk">8.5GB SSD storage</span>
+                  <span data-i18n="str-tablecontent-recdisk">10GB SSD storage</span>
                 </li>
               </ul>
           </div>
@@ -505,7 +505,7 @@ const template = /* html */ `
               Esta nueva versión podríamos llamarla xfce lite por su gran parecido estético y su configuración sencilla para cualquier tipo de usuario.
             </p>
             <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Xfce/CuerdOS-2.0-Xfce.iso/download" 
+              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.1-Xfce/CuerdOS-2.1-Xfce.iso/download" 
                  class="btn btn-primary spin-primary Xfce-btn">
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
@@ -513,16 +513,16 @@ const template = /* html */ `
                 <div class="download-dropdown">
                   <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
                   <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Xfce/CuerdOS-2.0-Xfce.iso"
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-Xfce/CuerdOS-2.1-Xfce.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://archive.org/download/cuerdos-2.0_xfce/CuerdOS-2.0-Xfce.iso"
+                    <a href="https://archive.org/download/cuerdos-2.1_xfce/CuerdOS-2.1-Xfce.iso"
                      class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0_xfce/cuerdos-2.0_xfce_archive.torrent"
+                    <a href="https://archive.org/download/cuerdos-2.1_xfce/cuerdos-2.1_xfce_archive.torrent"
                      class="dropdown-item">Torrent</a>
                   </div>
                 </div>
               </div>
-              <a href="checksums/CuerdOS-2.0-Xfce.md5" class="spin-checksum">
+              <a href="checksums/CuerdOS-2.1-Xfce.md5" class="spin-checksum">
                 Checksums
               </a>
             </div>
@@ -547,7 +547,7 @@ const template = /* html */ `
               Esta nueva versión podríamos llamarla xfce lite por su gran parecido estético y su configuración sencilla para cualquier tipo de usuario.
             </p>
             <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Sway/CuerdOS-2.0-Sway.iso/download" 
+              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.1-Sway/CuerdOS-2.1-Sway.iso/download" 
                  class="btn btn-primary spin-primary budgie-btn">
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
@@ -555,16 +555,16 @@ const template = /* html */ `
                 <div class="download-dropdown">
                   <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
                   <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Sway/CuerdOS-2.0-Sway.iso"
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-Sway/CuerdOS-2.1-Sway.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-sway/CuerdOS-2.0-Sway.iso"
+                    <a href="https://archive.org/download/cuerdos-2.1-sway/CuerdOS-2.1-Sway.iso"
                      class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-sway/cuerdos-2.0-sway_archive.torrent"
+                    <a href="https://archive.org/download/cuerdos-2.1-sway/cuerdos-2.1-sway_archive.torrent"
                      class="dropdown-item">Torrent</a>
                   </div>
                 </div>
               </div>
-              <a href="checksums/CuerdOS-2.0-Sway.md5" class="spin-checksum">
+              <a href="checksums/CuerdOS-2.1-Sway.md5" class="spin-checksum">
                 Checksums
               </a>
             </div>
@@ -576,62 +576,20 @@ const template = /* html */ `
           </div>
         </div>
 
-        <!-- Cinnamon -->
+        <!-- labwc -->
         <div class="spin-item ">
           <div class="spin-content">
             <div class="spin-header">
-              <div class="spin-icon cinnamon-icon">
-                <img src="Frontend/src/Images/spins/logos/cinnamon-logo.webp" alt="Cinnamon Logo">
+              <div class="spin-icon labwc-icon">
+                <img src="Frontend/src/Images/spins/logos/labwc-logo.webp" alt="LabWC Logo">
               </div>
-              <h2 class="spin-name">CuerdOS Cinnamon</h2>
+              <h2 class="spin-name">CuerdOS LabWC</h2>
             </div>
-            <p class="spin-description" data-i18n="str-content-download-description-cinnamon">
-              Os presentamos otro clásico nuestro con acabados refrescados.
-            </p>
-            <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Cinnamon/CuerdOS-2.0-Cinnamon.iso/download" 
-                 class="btn btn-primary spin-primary cinnamon-btn">
-                <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
-              </a>
-              <div class="spin-secondary">
-                <div class="download-dropdown">
-                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
-                  <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Cinnamon/CuerdOS-2.0-Cinnamon.iso"
-                     class="dropdown-item">Unizar</a>
-                    <a href="https://ia802303.us.archive.org/3/items/cuerdos-2.0-cinnamom/CuerdOS-2.0-Cinnamon-XLibre.iso"
-                     class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-cinnamom/cuerdos-2.0-cinnamom_archive.torrent"
-                     class="dropdown-item">Torrent</a>
-                  </div>
-                </div>
-              </div>
-              <a href="checksums/CuerdOS-2.0-Cinnamon.md5" class="spin-checksum">
-                Checksums
-              </a>
-            </div>
-          </div>
-          <div class="spin-image">
-            <div class="spin-image-container cinnamon-bg">
-              <img src="Frontend/src/Images/spins/Cinnamon.webp" alt="CuerdOS Cinnamon">
-            </div>
-          </div>
-        </div>
-
-        <!-- LXQt -->
-        <div class="spin-item reverse">
-          <div class="spin-content">
-            <div class="spin-header">
-              <div class="spin-icon lxqt-icon">
-                <img src="Frontend/src/Images/spins/logos/lxqt-logo.webp" alt="LXQt Logo">
-              </div>
-              <h2 class="spin-name">CuerdOS LXQt</h2>
-            </div>
-            <p class="spin-description" data-i18n="str-content-download-description-lxqt">
+            <p class="spin-description" data-i18n="str-content-download-description-labwc">
               Esta edición trae una configuración familiar y cómoda para cualquier tipo de usuario.
             </p>
             <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-LXQt/CuerdOS-2.0-LXQt.iso/download" 
+              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.1-LabWC/CuerdOS-2.1-LabWC.iso/download" 
                  class="btn btn-primary spin-primary lxqt-btn">
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
@@ -639,65 +597,23 @@ const template = /* html */ `
                 <div class="download-dropdown">
                   <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
                   <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-LXQt/CuerdOS-2.0-LXQt.iso"
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-LabWC/CuerdOS-2.1-LabWC.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://ia903405.us.archive.org/28/items/cuerdos-2.0-lxqt/CuerdOS-2.0-LXQt-XLibre.iso"
+                    <a href="https://ia903405.us.archive.org/28/items/cuerdos-2.1-labwc/CuerdOS-2.1-LabWC.iso"
                      class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-lxqt/cuerdos-2.0-lxqt_archive.torrent"
+                    <a href="https://archive.org/download/cuerdos-2.1-labwc/cuerdos-2.1-labwc_archive.torrent"
                      class="dropdown-item">Torrent</a>
                   </div>
                 </div>
               </div>
-              <a href="checksums/CuerdOS-2.0-LXQt.md5" class="spin-checksum">
+              <a href="checksums/CuerdOS-2.1-LabWC.md5" class="spin-checksum">
                 Checksums
               </a>
             </div>
           </div>
           <div class="spin-image">
             <div class="spin-image-container lxqt-bg">
-              <img src="Frontend/src/Images/spins/LXQt.webp" alt="CuerdOS LXQt">
-            </div>
-          </div>
-        </div>
-
-        <!-- Mate -->
-        <div class="spin-item ">
-          <div class="spin-content">
-            <div class="spin-header">
-              <div class="spin-icon mate-icon">
-                <img src="Frontend/src/Images/spins/logos/mate-logo.webp" alt="Mate Logo">
-              </div>
-              <h2 class="spin-name">CuerdOS MATE</h2>
-            </div>
-            <p class="spin-description" data-i18n="str-content-download-description-mate">
-              La nueva edición Mate con un acabado nuevo y más sencillo saliendo de lo clásico.
-            </p>
-            <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Mate/CuerdOS-2.0-Mate.iso/download" 
-                 class="btn btn-primary spin-primary mate-btn">
-                <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
-              </a>
-              <div class="spin-secondary">
-                <div class="download-dropdown">
-                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
-                  <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Mate/CuerdOS-2.0-Mate.iso"
-                     class="dropdown-item">Unizar</a>
-                    <a href="https://dn721704.ca.archive.org/0/items/cuerdos-2.0-mate-xlibre/CuerdOS-2.0-MATE-XLibre.iso"
-                     class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-mate-xlibre/cuerdos-2.0-mate-xlibre_archive.torrent"
-                     class="dropdown-item">Torrent</a>
-                  </div>
-                </div>
-              </div>
-              <a href="checksums/CuerdOS-2.0-Mate.md5" class="spin-checksum">
-                Checksums
-              </a>
-            </div>
-          </div>
-          <div class="spin-image">
-            <div class="spin-image-container mate-bg">
-              <img src="Frontend/src/Images/spins/MATE.webp" alt="CuerdOS MATE">
+              <img src="Frontend/src/Images/spins/LabWC.webp" alt="CuerdOS LXQt">
             </div>
           </div>
         </div>
@@ -715,7 +631,7 @@ const template = /* html */ `
               La distribución de la avioneta y los tonos olivas presenta su nueva Shell, con acabados más estéticos y novedades curiosas.
             </p>
             <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Gnome/CuerdOS-2.0-Gnome.iso/download" 
+              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.1-Shell/CuerdOS-2.1-Shell.iso/download" 
                  class="btn btn-primary spin-primary shell-btn">
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
@@ -723,16 +639,16 @@ const template = /* html */ `
                 <div class="download-dropdown">
                   <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
                   <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Gnome/CuerdOS-2.0-Gnome.iso"
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-Shell/CuerdOS-2.1-Shell.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://archive.org/download/cuerd-os-2.0-gnome/CuerdOS-2.0-Gnome.iso"
+                    <a href="https://archive.org/download/cuerdos-2.1-shell/CuerdOS-2.1-Shell.iso"
                      class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerd-os-2.0-gnome/cuerd-os-2.0-gnome_archive.torrent"
+                    <a href="https://archive.org/download/cuerdos-2.1-shell/cuerdos-2.1-shell_archive.torrent"
                      class="dropdown-item">Torrent</a>
                   </div>
                 </div>
               </div>
-              <a href="checksums/CuerdOS-2.0-Gnome.md5" class="spin-checksum">
+              <a href="checksums/CuerdOS-2.1-Shell.md5" class="spin-checksum">
                 Checksums
               </a>
             </div>
@@ -757,7 +673,7 @@ const template = /* html */ `
               La distribución de la avioneta y los tonos olivas presenta su nuevo Plasma, con acabados más estéticos y novedades curiosas.
             </p>
             <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Plasma/CuerdOS-2.0-Plasma.iso/download" 
+              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.1-Plasma/CuerdOS-2.1-Plasma.iso/download" 
                  class="btn btn-primary spin-primary kde-btn">
                 <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
               </a>
@@ -765,16 +681,16 @@ const template = /* html */ `
                 <div class="download-dropdown">
                   <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
                   <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Plasma/CuerdOS-2.0-Plasma.iso"
+                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-Plasma/CuerdOS-2.1-Plasma.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-plasma/CuerdOS-2.0-Plasma.iso"
+                    <a href="https://archive.org/download/cuerdos-2.1-plasma/CuerdOS-2.1-Plasma.iso"
                      class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-plasma/cuerdos-2.0-plasma_archive.torrent"
+                    <a href="https://archive.org/download/cuerdos-2.1-plasma/cuerdos-2.1-plasma_archive.torrent"
                      class="dropdown-item">Torrent</a>
                   </div>
                 </div>
               </div>
-              <a href="checksums/CuerdOS-2.0-Plasma.md5" class="spin-checksum">
+              <a href="checksums/CuerdOS-2.1-Plasma.md5" class="spin-checksum">
                 Checksums
               </a>
             </div>
@@ -782,49 +698,6 @@ const template = /* html */ `
           <div class="spin-image">
             <div class="spin-image-container x3-bg">
               <img src="Frontend/src/Images/spins/KDE.webp" alt="CuerdOS kde">
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- Budgie -->
-        <div class="spin-item reverse">
-          <div class="spin-content">
-            <div class="spin-header">
-              <div class="spin-icon budgie-icon">
-                <img src="Frontend/src/Images/spins/logos/budgie-logo.webp" alt="budgie Logo">
-              </div>
-              <h2 class="spin-name">CuerdOS Budgie</h2>
-            </div>
-            <p class="spin-description" data-i18n="str-content-download-description-budgie">
-              La distribución de la avioneta y los tonos olivas presenta su nueva edición Budgie, con acabados más estéticos y novedades curiosas..
-            </p>
-            <div class="spin-downloads">
-              <a href="https://sourceforge.net/projects/cuerdos/files/CuerdOS-2.0-Budgie/CuerdOS-2.0-Budgie.iso/download" 
-                 class="btn btn-primary spin-primary budgie-btn">
-                <span data-i18n="str-download-sourceforge">Download from Sourceforge</span>
-              </a>
-              <div class="spin-secondary">
-                <div class="download-dropdown">
-                  <button class="btn btn-outline download-link dropdown-toggle" data-i18n="str-download-other">Otras Fuentes</button>
-                  <div class="dropdown-content">
-                    <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.0-Budgie/CuerdOS-2.0-Budgie.iso"
-                     class="dropdown-item">Unizar</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-budgie/CuerdOS-2.0-Budgie-XLibre.iso"
-                     class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.0-budgie/cuerdos-2.0-budgie_archive.torrent"
-                     class="dropdown-item">Torrent</a>
-                  </div>
-                </div>
-              </div>
-              <a href="checksums/CuerdOS-2.0-Budgie.md5" class="spin-checksum">
-                Checksums
-              </a>
-            </div>
-          </div>
-          <div class="spin-image">
-            <div class="spin-image-container x3-bg">
-              <img src="Frontend/src/Images/spins/Budgie.webp" alt="CuerdOS budgie">
             </div>
           </div>
         </div>

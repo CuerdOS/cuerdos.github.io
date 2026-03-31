@@ -164,16 +164,16 @@ const template = /* html */ `
         <div class="technical-grid">
           <div class="technical-features">
             <div class="technical-feature">
-              <span data-i18n="str-content-otherfeatures-1">Bauh Store preconfigured for easy software installation</span>
+              <span data-i18n="str-content-otherfeatures-1"Yelena Store available, this is our store to make easy install deb packages</span>
             </div>
             <div class="technical-feature">
-              <span data-i18n="str-content-otherfeatures-2">ZRam optimization for better memory management</span>
+              <span data-i18n="str-content-otherfeatures-2">ZRam and RAM optimization for better memory management</span>
             </div>
             <div class="technical-feature">
-              <span data-i18n="str-content-otherfeatures-3">Nala and Apt-fast for faster package management</span>
+              <span data-i18n="str-content-otherfeatures-3">Debbie installer for click&install local deb files</span>
             </div>
             <div class="technical-feature">
-              <span data-i18n="str-content-otherfeatures-4">Custom kernel with BORE scheduler and Ananicy daemon</span>
+              <span data-i18n="str-content-otherfeatures-4">Custom kernel BORE scheduler among other optimizacions</span>
             </div>
           </div>
           <div class="technical-features">
