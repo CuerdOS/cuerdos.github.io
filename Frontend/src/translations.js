@@ -75,8 +75,8 @@ const translations = {
     "str-launch-errors": "Launch Errors",
       //Spins
     "str-content-download-description-xfce": "This flavor brings XFCE as the default desktop environment, with a modern and comfortable finish for any user.",
-    "str-content-download-description-Sway": "This flavour has Sway as main Tiling WM for those who prefers something lighter than XFCE. (Live user is 'user' and password is 'live').",
-    "str-content-download-description-labwc": "This flavour has LabWC as main Stacking WM this is the natural evolution of LXQt on our ecosystem. (Live user is 'user' and password is 'live').",
+    "str-content-download-description-Sway": "This flavour has Sway as main Tiling WM for those who prefers something lighter than XFCE. (Live user is 'user' and password is 'live'.)",
+    "str-content-download-description-labwc": "This flavour has LabWC as main Stacking WM this is the natural evolution of LXQt on our ecosystem.",
     "str-content-download-description-shell" : "This flavour has Gnome as main desktop environment with a modern and eye-catching design.",
     "str-content-download-description-kde": "This flavour has KDE as main desktop environment with good contrasts and modern design.",
     "str-desc-autor": "These flavours are created and maintained by the CuerdOS development team, any misuse is at user's own risk.",
@@ -242,8 +242,8 @@ const translations = {
       //Spins
     //"str-title-downloadlink-xfce": "CuerdOS XFCE",
     "str-content-download-description-xfce": "Este sabor trae XFCE como entorno de escritorio predeterminado, con un acabado moderno y cómodo para cualquier usuario.",
-    "str-content-download-description-Sway": "Este sabor monta Sway como gestor de ventanas tiling estrella, para aquellos que quieren algo más sencillo y ligero que XFCE. (Usuario del live cd 'user' y contraseña 'live').",
-    "str-content-download-description-labwc": "Este sabor trae LabWC como gestor de ventanas tipo Stacking principal, es la evolución natural de LXQt en nuestro ecosistema. (Usuario del live cd 'user' y contraseña 'live').",
+    "str-content-download-description-Sway": "Este sabor monta Sway como gestor de ventanas tiling estrella, para aquellos que quieren algo más sencillo y ligero que XFCE. (Usuario del live cd 'user' y contraseña 'live'.)",
+    "str-content-download-description-labwc": "Este sabor trae LabWC como gestor de ventanas tipo Stacking principal, es la evolución natural de LXQt en nuestro ecosistema.",
     "str-content-download-description-shell" :"Este sabor trae Gnome como escritorio principal con unos acabados bastante modernos y llamativos.",
     "str-content-download-description-kde": "Este sabor trae KDE como escritorio principal, tras mucho tiempo de espera por la comunidad, está de vuelta.",
     "str-desc-autor": "Estos sabores son creados y mantenidos por el equipo de desarrollo de CuerdOS, cualquier uso indebido queda bajo responsabilidad del usuario.",
