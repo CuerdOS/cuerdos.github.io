@@ -42,7 +42,7 @@ const translations = {
     "str-tablecontent-minram": "2GB of RAM",
     "str-tablecontent-recracm": "4GB of RAM",
     "str-tablecontent-mincpu": "x86_64 1.00 GHz CPU",
-    "str-tablecontent-recdisk": "10GB Disk storage on SSD",
+    "str-tablecontent-recdisk": "15GB Disk storage on SSD",
     "str-tablecontent-mindisk": "15GB Disk storage",
     "str-tablecontent-reccpu": "x86_64 1.00 GHz CPU",
     "str-tablecontent-recram": "2GB of RAM",
