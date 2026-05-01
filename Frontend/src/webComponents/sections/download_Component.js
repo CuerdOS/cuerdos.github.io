@@ -515,9 +515,9 @@ const template = /* html */ `
                   <div class="dropdown-content">
                     <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-Xfce/CuerdOS-2.1-Xfce.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://archive.org/download/cuerdos-2.1_xfce/CuerdOS-2.1-Xfce.iso"
+                    <a href="https://archive.org/download/cuerdos-2.1-xfce/CuerdOS-2.1-Xfce.iso"
                      class="dropdown-item">Archive</a>
-                    <a href="https://archive.org/download/cuerdos-2.1_xfce/cuerdos-2.1_xfce_archive.torrent"
+                    <a href="https://archive.org/download/cuerdos-2.1-xfce/cuerdos-2.1-xfce_archive.torrent"
                      class="dropdown-item">Torrent</a>
                   </div>
                 </div>
@@ -599,7 +599,7 @@ const template = /* html */ `
                   <div class="dropdown-content">
                     <a href="https://softlibre.unizar.es/cuerdos/CuerdOS-2.1-LabWC/CuerdOS-2.1-LabWC.iso"
                      class="dropdown-item">Unizar</a>
-                    <a href="https://ia903405.us.archive.org/28/items/cuerdos-2.1-labwc/CuerdOS-2.1-LabWC.iso"
+                    <a href="https://archive.org/download/cuerdos-2.1-labwc/CuerdOS-2.1-LabWC.iso"
                      class="dropdown-item">Archive</a>
                     <a href="https://archive.org/download/cuerdos-2.1-labwc/cuerdos-2.1-labwc_archive.torrent"
                      class="dropdown-item">Torrent</a>
