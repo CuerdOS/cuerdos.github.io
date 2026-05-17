@@ -334,138 +334,157 @@ const translations = {
       //Notification-component
     "str-content-banner-title":"Gracias por el recibimiento y feedback de esta nueva edición. ",
     "str-content-banner-text":"Haz clic aquí para más"
-  },
+  }
 }
-// Función para detectar el idioma del navegador
-function detectBrowserLanguage() {
-  // Obtener idiomas del navegador
-  const browserLanguages = navigator.languages || [navigator.language || navigator.userLanguage || "en"]
+class AppI18n extends HTMLElement {
+  static get observedAttributes() {
+    return ["lang"]
+  }
 
-  for (const lang of browserLanguages) {
-    const langCode = lang.split("-")[0].toLowerCase()
+  constructor() {
+    super()
+    this._translations = translations
+    this._lang = "en"
+    this._observer = null
+    this._boundLanguageChange = this._onExternalLanguageChange.bind(this)
+  }
 
-    // Verificar si tenemos traducciones
-    if (translations[langCode]) {
-      return langCode
+  connectedCallback() {
+    const saved = this.getStoredLanguage()
+    const detected = this.detectBrowserLanguage()
+    const initial = saved || saved || detected || "en"
+
+    document.addEventListener("app-language-changed", this._boundLanguageChange)
+
+    this.setLanguage(initial, false, false)
+    this.observeLightDom()
+    this.translate(document)
+    document.documentElement.lang = this._lang
+    console.log("saved:", saved)
+    console.log("navigator.language:", navigator.language)
+    console.log("navigator.languages:", navigator.languages)
+    console.log("detected:", detected)
+    console.log("available:", Object.keys(this._translations))
+    console.log("initial:", initial)
+    queueMicrotask(() => {
+      this.emitLanguageChange()
+    })
+  }
+
+  disconnectedCallback() {
+    if (this._observer) this._observer.disconnect()
+    document.removeEventListener("app-language-changed", this._boundLanguageChange)
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "lang" && oldValue !== newValue && newValue) {
+      this.setLanguage(newValue)
     }
   }
 
-  // Fallback a inglés si no se encuentra ningún idioma soportado
-  return "en"
-}
-
-// Inicializar idioma: localStorage > navegador > inglés
-let currentLang = localStorage.getItem("lang") || detectBrowserLanguage()
-
-// Función para aplicar traducciones
-function applyTranslations(container = document) {
-  container.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n")
-    const translated = translations[currentLang][key]
-
-    if (translated !== undefined) {
-      el.innerHTML = translated
-    } else {
-      console.warn(`Missing translation for key "${key}" in "${currentLang}"`)
-    }
-  })
-
-  // Buscar en shadow roots de web components
-  container.querySelectorAll("*").forEach((el) => {
-    if (el.shadowRoot) {
-      el.shadowRoot.querySelectorAll("[data-i18n]").forEach((shadowEl) => {
-        const key = shadowEl.getAttribute("data-i18n")
-        const translated = translations[currentLang][key]
-
-        if (translated !== undefined) {
-          shadowEl.innerHTML = translated
-        } else {
-          console.warn(`Missing translation for key "${key}" in "${currentLang}"`)
-        }
-      })
-    }
-  })
-}
-// MutationObserver para detectar elementos dinámicos
-let observer
-function initTranslationObserver() {
-  if (observer) {
-    observer.disconnect()
+  _onExternalLanguageChange(event) {
+    const newLang = event?.detail?.lang
+    if (!newLang || newLang === this._lang) return
+    this.setLanguage(newLang, true, false)
   }
 
-  observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      // Verificar nodos añadidos
-      mutation.addedNodes.forEach((node) => {
-        if (node.nodeType === Node.ELEMENT_NODE) {
-          // Aplicar traducciones al nuevo elemento
-          applyTranslations(node)
+  detectBrowserLanguage() {
+    const available = Object.keys(this._translations || {})
+    const langs = navigator.languages || [navigator.language || "en"]
 
-          // Si el elemento tiene shadow root, observarlo también
-          if (node.shadowRoot) {
-            applyTranslations(node.shadowRoot)
+    for (const lang of langs) {
+      const code = String(lang).split("-")[0].toLowerCase()
+      if (available.includes(code)) {
+        return code
+      }
+    }
+
+    return "en"
+  }
+
+  getStoredLanguage() {
+    try {
+      return localStorage.getItem("lang")
+    } catch {
+      return null
+    }
+  }
+
+  storeLanguage(lang) {
+    try {
+      localStorage.setItem("lang", lang)
+    } catch {}
+  }
+
+  t(key, lang = this._lang) {
+    return this._translations?.[lang]?.[key]
+      ?? this._translations?.en?.[key]
+      ?? key
+  }
+
+  setLanguage(newLang, persist = true, emit = true) {
+    if (!this._translations[newLang]) return
+
+    this._lang = newLang
+
+    if (this.getAttribute("lang") !== newLang) {
+      this.setAttribute("lang", newLang)
+    }
+
+    if (persist) this.storeLanguage(newLang)
+
+    document.documentElement.lang = newLang
+    this.translate(document)
+
+    if (emit) this.emitLanguageChange()
+  }
+
+  emitLanguageChange() {
+    this.dispatchEvent(new CustomEvent("app-language-changed", {
+      detail: {
+        lang: this._lang,
+        translations: this._translations[this._lang] || {},
+        t: (key) => this.t(key),
+      },
+      bubbles: true,
+      composed: true,
+    }))
+  }
+
+  translate(container = document) {
+    container.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.dataset.i18n
+      const value = this.t(key)
+
+      if (value == null) return
+
+      if (el.hasAttribute("data-i18n-attr")) {
+        const attrName = el.getAttribute("data-i18n-attr")
+        el.setAttribute(attrName, value)
+      } else {
+        el.innerHTML = value
+      }
+    })
+  }
+
+  observeLightDom() {
+    if (this._observer) this._observer.disconnect()
+
+    this._observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            this.translate(node)
           }
         }
-      })
+      }
     })
-  })
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-  })
-}
 
-// Función para cambiar idioma
-function changeLanguage(newLang) {
-  if (translations[newLang]) {
-    currentLang = newLang
-    localStorage.setItem("lang", currentLang)
-    applyTranslations()
-
-    // Actualizar selector de idioma si existe
-    const switcher = document.getElementById("langSelect")
-    if (switcher) {
-      switcher.value = currentLang
-    }
-  }
-}
-
-function initLanguageSwitcher() {
-  const switcher = document.getElementById("langSelect")
-  if (switcher) {
-    switcher.value = currentLang
-
-    switcher.addEventListener("change", () => {
-      changeLanguage(switcher.value)
+    this._observer.observe(document.body, {
+      childList: true,
+      subtree: true,
     })
   }
 }
 
-// Función para obtener el idioma actual
-function getCurrentLanguage() {
-  return currentLang
-}
-
-// Función para obtener todas las traducciones de un idioma
-function getTranslations(lang = currentLang) {
-  return translations[lang] || translations["en"]
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  applyTranslations()
-
-  initLanguageSwitcher()
-  // Inicializar observer para elementos dinámicos
-  initTranslationObserver()
-
-  console.log(`Language initialized: ${currentLang}`)
-})
-
-window.TranslationManager = {
-  changeLanguage,
-  getCurrentLanguage,
-  getTranslations,
-  applyTranslations,
-}
+customElements.define("app-i18n", AppI18n)

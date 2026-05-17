@@ -200,10 +200,50 @@ class TechnicalComponent extends HTMLElement {
   constructor() {
     super()
     this.shadow = this.attachShadow({ mode: "open" })
+    this._onAppLanguageChanged = this._onAppLanguageChanged.bind(this)
   }
 
-  connectedCallback() {
+  async connectedCallback() {
     this.render()
+    document.addEventListener("app-language-changed", this._onAppLanguageChanged)
+    await customElements.whenDefined("app-i18n")
+    this.translate()
+  }
+  disconnectedCallback() {
+    document.removeEventListener("app-language-changed", this._onAppLanguageChanged)
+  }
+
+  _onAppLanguageChanged() {
+    this.translate()
+  }
+    getI18n() {
+    return document.querySelector("app-i18n")
+  }
+
+  t(key) {
+    const i18n = this.getI18n()
+    if (!i18n || typeof i18n.t !== "function") return key
+    return i18n.t(key)
+  }
+
+  translate(root = this.shadowRoot || this) {
+    if (!root) return
+
+    root.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.dataset.i18n
+      const value = this.t(key)
+
+      if (value == null) return
+
+      if (el.hasAttribute("data-i18n-attr")) {
+        const attrName = el.getAttribute("data-i18n-attr")
+        el.setAttribute(attrName, value)
+      } else if (el.dataset.i18nHtml === "true") {
+        el.innerHTML = value
+      } else {
+        el.textContent = value
+      }
+    })
   }
   render() {
     this.shadow.innerHTML = template
