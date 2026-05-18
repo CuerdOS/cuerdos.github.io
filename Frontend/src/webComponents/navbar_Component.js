@@ -140,12 +140,14 @@ const styles = /* css */ `
       transform: translateY(-100%);
       opacity: 0;
       visibility: hidden;
+      display: none;
       transition: all 0.3s ease;
     }
     .nav-menu.active {
       transform: translateY(0);
       opacity: 1;
       visibility: visible;
+      display: flex;
     }
     .nav-toggle {
       display: block;
@@ -189,7 +191,7 @@ const template = /* html */ `
         <a href="index.html" class="nav-link inicio hide" data-i18n="str-menu-start">Startpage</a>
         <a href="#about" class="nav-link about" data-i18n="str-menu-about">About</a>
         <a href="#download" class="nav-link download" data-i18n="str-menu-download">Download</a>
-        <a href="https://cuerdoswiki.blogspot.com/" class="nav-link" data-i18n="str-menu-wiki">Wiki</a>
+        <a href="https://cuerdoswiki.blogspot.com/" class="nav-link wiki" data-i18n="str-menu-wiki">Wiki</a>
         <a href="changelogs.html" class="nav-link changelog" data-i18n="str-menu-changelog">Changelog</a>
       </div>
       <div class="nav-actions">

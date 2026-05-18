@@ -314,9 +314,11 @@ const template = /* html */ `
 
       <div class="footer-bottom">
         <p data-i18n="str-credits">© <span class="current-year">year</span> CuerdOS Dev Team. Licensed under GNU GPL v3.</p>
-        <p class="footer-license" data-i18n="str-subtitle-logolicense">
-          The <a href="https://github.com/CuerdOS/logo">CuerdOS logo</a> is published under
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>
+        <p class="footer-license">
+          <span data-i18n="str-subtitle-logolicense-1">The</span> 
+          <a class="element" href="https://github.com/CuerdOS/logo" data-i18n="str-subtitle-logolicense-2">CuerdOS logo</a> 
+          <span data-i18n="str-subtitle-logolicense-3">is published under</span>
+          <a class="element" href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>
         </p>
       </div>
     </div>

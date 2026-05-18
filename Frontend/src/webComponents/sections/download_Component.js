@@ -485,7 +485,7 @@ const template = /* html */ `
         </div>
       </div>
 
-      <div class="spins-section" data-i18n="spins">
+      <div class="spins-section">
         <h3 class="spins-title" data-i18n="str-spins-title">Other CuerdOS Desktops Available</h3>
         <p class="spins-description" data-i18n="str-spins-description">
           Explore alternative desktop environments created by our Team
