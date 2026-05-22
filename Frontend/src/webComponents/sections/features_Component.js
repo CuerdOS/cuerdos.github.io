@@ -5,15 +5,15 @@ const styles = /* css */ `
     box-sizing: border-box;
   }
 
-  .features-section {
-    padding: var(--section-padding);
+  .section-container{
+    display: var(--section-container-display);
+    padding: var(--section-container-padding);
     background: var(--background-section);
+    width: var(--section-container-width);
+    margin: var(--section-container-margin);
   }
 
-  .container {
-    max-width: var(--container-width);
-    margin: var(--container-margin);
-    padding: var(--container-padding);
+  .features-section{
   }
 
   .features-content {
@@ -168,7 +168,7 @@ const styles = /* css */ `
   }
 
   @media (max-width: 768px) {
-    .features-section {
+    .section-container {
       padding: 3rem 0;
     }
 
@@ -194,29 +194,29 @@ const styles = /* css */ `
       min-height: 250px;
     }
 
-    .container {
+    .features-section {
       padding: 0 1rem;
     }
   }
+  /* Media Querys */
+
+
   @media (max-width: 1024px) {
-    .container {
+    .section-container {
       max-width: 95vw;
-      padding: 0 1rem;
     }
   }
   @media (max-width: 1920px){
-    .container {
-    max-width: 85%;
-    margin: 0 auto;
-    padding: 0 1.2rem;
+    .section-container {
+      max-width: 85%;
+    }
   }
-}
 `
 
 const template = /* html */ `
   <style>${styles}</style>
-  <section class="features-section" id="about">
-    <div class="container">
+  <div class="section-container" >
+    <section class="features-section" id="about">
       <div class="features-content">
         <div class="section-title">
           <h1>
@@ -275,8 +275,8 @@ const template = /* html */ `
           </svg>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 `
 
 class FeaturesComponent extends HTMLElement {

@@ -5,14 +5,12 @@ const styles = /* css */ `
     box-sizing: border-box;
   }
 
-  .technical-section {
-    padding: var(--section-padding);
+  .section-container{
+    display: var(--section-container-display);
+    padding: var(--section-container-padding);
     background: var(--background-section);
-  }
-  .container {
-    max-width: var(--container-width);
-    margin: var(--container-margin);
-    padding: var(--container-padding);
+    width: var(--section-container-width);
+    margin: var(--section-container-margin);
   }
   .section-title {
     text-align: center;
@@ -75,7 +73,7 @@ const styles = /* css */ `
   }
 
   @media (max-width: 1368px) {
-    .technical-section {
+    .section-container {
       padding: 4rem 0;
     }
 
@@ -100,7 +98,7 @@ const styles = /* css */ `
   }
 
   @media (max-width: 768px) {
-    .technical-section {
+    .section-container {
       padding: 3rem 0;
     }
 
@@ -129,28 +127,23 @@ const styles = /* css */ `
       transform: translateY(-2px);
     }
 
-    .container {
+    .section-container {
       padding: 0 1rem;
     }
   }
-
-  @media (min-width: 1920px) {
-    .container {
-      max-width: 1600px;
+    @media (max-width: 1920px){
+    .section-container {
+      max-width: 85%;
       margin: 0 auto;
-      padding: 0 2rem;
-    }
-    
-    .technical-grid {
-      gap: 4rem;
     }
   }
+
 `
 
 const template = /* html */ `
   <style>${styles}</style>
-  <section class="technical-section" id="technical">
-    <div class="container">
+  <div class="section-container">
+    <section class="technical-section" id="technical">
       <div class="technical-content">
         <div class="section-title">
           <h1>
@@ -192,8 +185,8 @@ const template = /* html */ `
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 `
 
 class TechnicalComponent extends HTMLElement {

@@ -6,14 +6,14 @@ const styles = /* css */ `
   }
 
   .download-section {
-    padding: var(--section-padding);
-    background: var(--background-section);
   }
 
-  .container {
-    max-width: var(--container-width);
-    margin: var(--container-margin);
-    padding: var(--container-padding);
+  .section-container{
+    display: var(--section-container-display);
+    padding: var(--section-container-padding);
+    background: var(--background-section);
+    width: var(--section-container-width);
+    margin: var(--section-container-margin);
   }
 
   .section-title {
@@ -378,8 +378,8 @@ const styles = /* css */ `
   }
 
   @media (max-width: 768px) {
-    .download-section {
-      padding: 2rem 0;
+    .section-container {
+      padding: 3rem 0;
     }
 
     .section-title {
@@ -389,6 +389,7 @@ const styles = /* css */ `
     .requirements-grid {
       grid-template-columns: 1fr;
       gap: 1rem;
+      margin: 0 2.5rem;
     }
     .requirements-column {
       align-items:center;
@@ -400,8 +401,7 @@ const styles = /* css */ `
       font-size: 1.6rem; 
     }
     .requirements-list {
-      margin:0 5rem;
-      width: auto;
+      width: 100%;
       align-items:flex-start;
     }
 
@@ -427,20 +427,23 @@ const styles = /* css */ `
       padding: 1.5rem;
     }
   }
+    @media (max-width: 1024px) {
+    .section-container {
+      max-width: 95vw;
+    }
+  }
 
   @media (max-width: 1920px){
-    .container {
-    max-width: 85%;
-    margin: 0 auto;
-    padding: 0 1.2rem;
-  }
+    .section-container {
+      max-width: 85%;
+    }
   }
 `
 
 const template = /* html */ `
   <style>${styles}</style>
-  <section class="download-section" id="download">
-    <div class="container">
+  <div class="section-container">
+    <section class="download-section" id="download" >
       <div class="section-title">
         <h1>
           <span data-i18n="str-title-download">Download CuerdOS Skycatcher 2.1</span>
@@ -710,8 +713,8 @@ const template = /* html */ `
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 `
 
 class DownloadComponent extends HTMLElement {

@@ -101,11 +101,16 @@ const styles = /* css */ `
     transition: all 0.3s ease;
     width: 2rem;
     height: 2rem;
+    justify-content: center;
   }
 
   .nav-icon:hover {
     background-color: rgba(169, 182, 80, 0.1);
     color: var(--primary-green);
+  }
+  .nav-icon svg {
+    width: ;
+    height: auto;
   }
 
   .nav-toggle {

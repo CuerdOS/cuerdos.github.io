@@ -32,15 +32,13 @@
   /* Sections vars */
   
   --background-section :rgba(255, 255, 255, 0);
-  --section-padding: 4rem 0;
   --section-description-color: #cccccc;
-
   
   /* Size Containers */
-  
-  --container-width: 1920px;
-  --container-margin: 0 auto;
-  --container-padding: 0 1.2rem;
+  --section-container-display: flex;
+  --section-container-width: 100%;
+  --section-container-padding: 4rem 1.2rem;
+  --section-container-margin: 0 auto;
 
   /* Mobile Size Containers */
   
@@ -108,3 +106,5 @@ p {
 .fade-in-up {
   animation: fadeInUp 0.6s ease-out;
 }
+
+

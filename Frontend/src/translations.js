@@ -36,7 +36,7 @@ const translations = {
     "str-title-download": "Download",
     "str-content-download-1": 'This is the second version of CuerdOS, called CuerdOS Skycatcher. If you find bugs or wish to contribute ideas, contact us via email or Telegram. Thank you all for your collaboration and support!',
     "str-content-download-2": 'You can view changelogs and reported bugs for different releases <a class="element" href="changelog.html">here</a>.',
-    "str-titile-tabletitle": "System Requirements",
+    "str-title-tabletitle": "System Requirements",
     "str-tabletitle-minimum": "Minimum",
     "str-tabletitle-recommended": "Recommended",
     "str-tablecontent-minram": "2GB of RAM",
