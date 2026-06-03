@@ -9,6 +9,8 @@ const styles = /* css */ `
   }
 
   .section-container{
+    flex-direction: column;
+    justify-content: center;
     display: var(--section-container-display);
     padding: var(--section-container-padding);
     background: var(--background-section);

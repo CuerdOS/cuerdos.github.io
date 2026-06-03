@@ -6,11 +6,20 @@ const styles = /* css */ `
   }
 
   .section-container{
+    flex-direction: column;
+    justify-content: center;
     display: var(--section-container-display);
     padding: var(--section-container-padding);
     background: var(--background-section);
     width: var(--section-container-width);
     margin: var(--section-container-margin);
+  }
+  .technical-content{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+    margin-bottom: 4rem;
   }
   .section-title {
     text-align: center;
@@ -32,6 +41,7 @@ const styles = /* css */ `
     margin-bottom: 2.5rem;
     line-height: 1.6;
   }
+
   .technical-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -134,7 +144,6 @@ const styles = /* css */ `
     @media (max-width: 1920px){
     .section-container {
       max-width: 85%;
-      margin: 0 auto;
     }
   }
 
