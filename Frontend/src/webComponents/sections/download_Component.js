@@ -62,7 +62,7 @@ const styles = /* css */ `
   .requirements-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: .5rem;
   }
   .requirements-subtitle {
     font-size: var(--section-description-font);
@@ -379,6 +379,14 @@ const styles = /* css */ `
     text-decoration: underline;
   }
 
+  @media (max-width: 460px) {
+    .requirements-grid {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+  }
   @media (max-width: 768px) {
     .section-container {
       padding: 3rem 0;
