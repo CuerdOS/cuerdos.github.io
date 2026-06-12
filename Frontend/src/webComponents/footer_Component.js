@@ -230,7 +230,7 @@ const template = /* html */ `
                     <path d="M22 4H2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/><path d="M22 6l-10 7L2 6"/>
                 </svg>
               </a>
-              <a href="https://t.me/+GibSWjFc89Q2ODU8" class="social-link">
+              <a href="https://t.me/CuerdOS_Feedback" class="social-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21.120445"
